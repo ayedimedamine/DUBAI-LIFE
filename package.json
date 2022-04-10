@@ -1,0 +1,22 @@
+{
+  "name": "dubai-life",
+  "version": "1.0.0",
+  "description": "with form how accept information form users then save it as metadata in stripe then generate tickets code for customers saving customer information in database\r # DUBAI-LIFE",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamdinawfel/DUBAI-LIFE.git"
+  },
+  "author": "hamdinawfel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamdinawfel/DUBAI-LIFE/issues"
+  },
+  "homepage": "https://github.com/hamdinawfel/DUBAI-LIFE#readme",
+  "devDependencies": {
+    "tailwindcss": "3.0.23"
+  }
+}
