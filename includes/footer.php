@@ -61,13 +61,13 @@
             placeholder="Prénom"
             required=""
             type="text"
-            class="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 shadow-sm appearance-none md:mr-2 md:mb-0 focus:outline-none focus:shadow-outline"
+            class="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border-[#D19F46] shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46] md:mr-2 md:mb-0 focus:outline-none focus:shadow-outline"
           />
           <input
             placeholder="Email"
             required=""
             type="text"
-            class="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 shadow-sm appearance-none md:mr-2 md:mb-0 focus:outline-none focus:shadow-outline"
+            class="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border-[#D19F46] shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46] md:mr-2 md:mb-0 focus:outline-none focus:shadow-outline"
           />
           <button
             type="submit"
