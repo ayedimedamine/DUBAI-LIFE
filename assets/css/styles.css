@@ -959,12 +959,14 @@ footer::before {
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: 200px;
+  float: right;
 }
 .popover__content {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  left: 30px;
+  right: 0px;
   bottom: 15px;
   transform: translate(-10px, 100px);
   background-color: #fff;

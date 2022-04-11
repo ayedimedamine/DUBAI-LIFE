@@ -5,6 +5,8 @@ use FastRoute\Dispatcher;
 require "vendor/autoload.php";
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
+    $r->addRoute('GET', '/home', 'views/home.php');
+    $r->addRoute('GET', '/shop', 'views/shop.php');
     $r->addRoute('GET', '/', 'views/payment.php');
     $r->addRoute('GET', '/cancel', 'views/cancel.php');
     // $r->addRoute('GET', '/success', 'views//success.php?session_id={CHECKOUT_SESSION_ID}');
