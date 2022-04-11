@@ -5,7 +5,7 @@
 <!-- Hero -->
 <div class="relative z-0 bg-white">
   <div class="relative mx-auto lg:mx-16">
-      <img src='../assets/images/v1.0.0/hero.png' class="absolute inset-0 object-cover w-full h-full bg-black opacity-80" alt='The dubai life' />
+      <img src='../assets/images/v1.0.0/homeHero.png' class="absolute inset-0 object-fit w-full h-full bg-black" alt='The dubai life' />
       <div class="bg-black">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
         <div class="relative max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12">
@@ -138,7 +138,7 @@
     <!-- Call To Action-->
 <div class="bg-white">
     <div class="relative mx-auto lg:mx-16">
-        <img src='../assets/images/v1.0.0/hero.png' class="absolute inset-0 object-cover w-full h-full bg-black opacity-80" alt="" />
+        <img src='../assets/images/v1.0.0/cta.png' class="absolute inset-0 object-cover w-full h-full bg-black" alt="The Dubai Life" />
         <div class="bg-black">
             <div class="flex flex-col sm:text-center sm:mb-0">
             <div class="relative h-56 max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12 flex">

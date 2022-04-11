@@ -151,6 +151,14 @@ let form = document.forms["myForm"];
 let mail_format = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 let phone_format = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 let error = "";
+console.log(submitBtn);
+console.log(notif);
+console.log(spinner);
+console.log("closeModel" + closeModel);
+console.log(form);
+console.log(mail_format);
+console.log(phone_format);
+console.log(error);
 
 submitBtn.addEventListener("click", (e) => {
   if (form.name.value === "") {

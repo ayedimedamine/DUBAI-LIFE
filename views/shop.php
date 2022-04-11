@@ -5,7 +5,7 @@
 <!-- Hero -->
 <div class="relative z-0 bg-white">
   <div class="relative mx-auto lg:mx-16">
-      <img src='../assets/images/v1.0.0/hero.png' class="absolute inset-0 object-cover w-full h-full bg-black opacity-80" alt='The dubai life' />
+      <img src='../assets/images/v1.0.0/shopHero.png' class="absolute inset-0 object-cover w-full h-full bg-black" alt='The dubai life' />
       <div class="bg-black">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
         <div class="relative max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12">
@@ -33,8 +33,20 @@
         </div>
         <div class='border-t-2 border-[#D19F46] mt-4 col-span-2 md:col-span-4'></div>
     </div>
+    <div class="notification">
+          <div class="notifCard">
+            <img src="../assets/images/logo.png" alt="logo" />
+            <i class="fa-solid fa-xmark" id="closeModel"></i>
+            <p class="notifMsg"></p>
+          </div>
+        </div>
+            <div class="spinnercard">
+             <div class="spincircle">
+               <div class="spin"></div>
+            </div>
+    </div>
     <div class='px-16 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20'>
-    <form autocomplete="off" action="/shop" methodK="POST" name="myForm">
+    <form autocomplete="off" action="/checkout" methodK="POST" name="myForm">
         <div class='grid w-full gap-10 row-gap-8 sm:row-gap-10 lg:grid-cols-3  sm:mx-auto'>
             <!-- Customer Infos section -->
             <div class='flex flex-col'>
@@ -42,14 +54,14 @@
                     <input
                     placeholder="Prénpm & nom"
                     name="Nom"
-                    required
+                    required=""
                     type="text"
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]" 
                     />
                     <input
                     placeholder="E-mail"
                     name="email"
-                    required
+                    required=""
                     type="email"
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />

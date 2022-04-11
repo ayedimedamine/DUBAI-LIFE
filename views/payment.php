@@ -5,17 +5,19 @@ include 'includes/navbar.php';
 
 ?>
         <div class="notification">
-      <div class="notifCard">
-        <img src="../assets/images/logo.png" alt="logo" />
-        <i class="fa-solid fa-xmark" id="closeModel"></i>
-        <p class="notifMsg"></p>
-      </div>
-    </div>
-        <div class="spinnercard">
-      <div class="spincircle">
-        <div class="spin"></div>
-      </div>
-    </div>
+          <div class="notifCard">
+            <img src="../assets/images/logo.png" alt="logo" />
+            <!-- <i class="fa-solid fa-xmark" ></i> -->
+            <!-- <i class="fab fa-times-circle" id="closeModel"></i> -->
+            <span class="text-3xl z-10 relative text-black"id="closeModel">x<span>
+            <p class="notifMsg"></p>
+          </div>
+        </div>
+            <div class="spinnercard">
+             <div class="spincircle">
+               <div class="spin"></div>
+            </div>
+        </div>
     <header>
       <div class="header">
         <h1>Immobilier <span>à Dubai</span></h1>
