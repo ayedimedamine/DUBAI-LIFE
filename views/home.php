@@ -40,7 +40,7 @@
         <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-4"></div>
     </div>
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-20">
-        <div class="grid grid-rows md:grid-cols-2 gap-4 lg:gap-16 items-center md:items-start justify-center md:justify-between lg:flex-row">
+        <div class="grid grid-rows md:grid-cols-2 gap-4 lg:gap-24 items-center md:items-start justify-center md:justify-between lg:flex-row">
         <div class="mb-10 w-full bg-white">
             <div class="mb-0">
             <div class="border border-black flex flex-col items-center justify-center p-2">
