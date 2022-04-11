@@ -34,20 +34,22 @@
         <div class='border-t-2 border-[#D19F46] mt-4 col-span-2 md:col-span-4'></div>
     </div>
     <div class='px-16 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20'>
-    <form autocomplete="off" action="/checkout" method="POST" name="myForm">
+    <form autocomplete="off" action="/shop" methodK="POST" name="myForm">
         <div class='grid w-full gap-10 row-gap-8 sm:row-gap-10 lg:grid-cols-3  sm:mx-auto'>
             <!-- Customer Infos section -->
             <div class='flex flex-col'>
                 <div class="space-y-3">
                     <input
                     placeholder="Prénpm & nom"
-                    required=""
+                    name="Nom"
+                    required
                     type="text"
                     class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]" 
                     />
                     <input
                     placeholder="E-mail"
-                    required=""
+                    name="email"
+                    required
                     type="email"
                     class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
@@ -57,37 +59,35 @@
                     country="france"
                     type="tel" 
                     id="tel"
+                    name="tel"
                     th:field="*{mobileNumber}"
                     class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
 
                     <input
                     placeholder="Adresse de la Rue"
-                    required=""
+                    name=adress
+                    required
                     type="text"
                     class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
                     placeholder="Cité"
-                    required=""
+                    name="city"
+                    required
                     type="text"
                     class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
                     placeholder="Etat / Provenance"
-                    required=""
                     type="text"
+                    name="state"
                     class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
                     placeholder="Code Postale"
-                    required=""
-                    type="text"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
-                    />
-                    <input
-                    placeholder="Pays"
-                    required=""
+                    required
+                    name="zipCode"
                     type="text"
                     class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
@@ -372,14 +372,14 @@
                     <div class="text-white p-2 cursor-pointer" id="minus"><i class="fa fa-minus fa-lg" ></i></div>
                     <input
                     type="number" name="quantity" id="quantity" min="1" value="1" required 
-                    class="w-16 -mr-6 text-center text-white text-3xl font-bold bg-[#D19F46] border-none focus:[#D19F46] focus:ring-[#D19F46] py-0 focus:outline-none focus:shadow-outline"
+                    class="w-16 text-center text-white text-3xl font-bold bg-[#D19F46] border-none focus:[#D19F46] focus:ring-[#D19F46] py-0 focus:outline-none focus:shadow-outline"
                     />
                     <div class="text-white p-2 cursor-pointer" id="plus"><i class="fa fa-plus fa-lg" ></i></div>
                 </div>
                 <!-- Order price -->
                 <div class="mt-6 ml-2 grid grid-cols-5 h-12 items-center justify-start border-2 border-[#D19F46] rounded-full">
                     <p class="col-span-2">
-                    <span class="font-bold text-2xl tracking-wider text-white bg-black rounded-full px-8 py-[10px] -ml-2">Prix</span>
+                    <span class="font-bold text-2xl tracking-wider text-white bg-[#D19F46] rounded-full px-8 py-[10px] -ml-2">Prix</span>
                     </p>
                     <div class="flex items-center justify-center col-span-3 text-center font-bold text-2xl">
                     <input
