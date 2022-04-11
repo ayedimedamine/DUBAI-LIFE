@@ -105,11 +105,15 @@
             </div>
             </div>
         </div>
-        <div class="relative w-full cursor-pointer bg-black py-16 px-16">
-             <p class="text-center text-white text-2xl font-semibold mb-4">
-                Gagnez: visa + billets + ouverture de société + appartement avec piscine privée à Dubai et pleins d'autres cadeux
+        <div class="relative w-full cursor-pointer bg-black py-12">
+             <p class="text-center text-white text-2xl font-semibold my-2 border-t border-white mx-4 py-4">
+                <span class='font-medium opacity-95'>Gagnez:</span> visa <span class='font-medium opacity-95'>+</span> billets <span class='font-medium opacity-95'>+</span> ouverture de société <span class='font-medium opacity-95'>+</span> appartement avec piscine privée à Dubaï <span class='font-medium opacity-95'>et</span> pleins d'autres cadeux
             </p>
-            <img class="object-contain w-full h-auto mx-auto" src="../assets/images/v1.0.0/banner.png" alt="The Dubai Life" />
+             <p class="w-32 mx-auto mb-4 border-t border-white"><p>
+            <img class="absolute right-0 w-56 object-cover h-auto -mr-4 mt-0" src="../assets/images/v1.0.0/gift.png" alt="The Dubai Life" />
+            <div class="px-16">
+              <img class="object-cover h-96 mx-auto" src="../assets/images/v1.0.0/banner.png" alt="The Dubai Life" />
+            </div>
         </div>
         <div class="mt-6 max-w-xl px-8 block md:hidden">
             <p class="text-center text-lg">
