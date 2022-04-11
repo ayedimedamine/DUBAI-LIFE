@@ -44,14 +44,14 @@
                     name="Nom"
                     required
                     type="text"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]" 
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]" 
                     />
                     <input
                     placeholder="E-mail"
                     name="email"
                     required
                     type="email"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <!-- International Phone Number  -->
                     <input 
@@ -61,7 +61,7 @@
                     id="tel"
                     name="tel"
                     th:field="*{mobileNumber}"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
 
                     <input
@@ -69,33 +69,33 @@
                     name=adress
                     required
                     type="text"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
                     placeholder="Cité"
                     name="city"
                     required
                     type="text"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
                     placeholder="Etat / Provenance"
                     type="text"
                     name="state"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
                     placeholder="Code Postale"
                     required
                     name="zipCode"
                     type="text"
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <select 
                     id="country"
                     name="country"
                     required 
-                    class="w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]">
+                    class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]">
                         <option value="Afganistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
@@ -358,7 +358,7 @@
                 </div>
             </div>
             <!-- Product Image section -->
-            <div class='flex flex-col justify-center rounded-3xl border-2 border-[#D19F46] py-4'>
+            <div class='flex flex-col justify-center rounded-3xl border-2 border-[#D19F46] py-4 md:py-0'>
                 <img src='../assets/images/v1.0.0/ebook.png' class="mx-auto"alt="E-BOOK" />
                 <p class="tracking-wider text-2xl text-center">1 <span class="font-bold">E-BOOK</span> <span class="font-bold text-[#D19F46]">=</span> 1 <span class="font-bold">TICKET</span></p>
             </div>
@@ -389,17 +389,14 @@
                         disabled 
                         class="text-center w-full font-bold text-2xl bg-transparent border-none py-0"
                     />
-
-                    <!-- <p class="font-bold text-2xl">€</p> -->
                     </div>
-                   
                 </div>
                 <!-- Order Call To Action Button-->
                 <div class="mt-6 grid grid-cols-4  items-center justify-start">
                     <button
                     type="submit"
                     id="submitBtn"
-                    class="font-bold text-2xl bg-black text-white tracking-wider col-start-2 col-span-3 rounded-full h-12 ">Acheter</button>
+                    class="font-bold text-2xl bg-black text-white tracking-wider col-start-2 col-span-3 rounded-full h-12 transition duration-300">Acheter</button>
                 </div>
                 <!-- Order Discount -->
                 <div class="mt-6  grid-cols-8 h-12 items-center justify-start hidden">

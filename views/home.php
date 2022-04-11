@@ -19,7 +19,7 @@
           </p>
           <a
             href="/shop"
-            class="inline-flex items-center justify-center h-10 px-6 font-bold text-lg tracking-wider text-white bg-[#040405] rounded shadow-md "
+            class="inline-flex items-center justify-center h-10 px-6 font-bold text-lg tracking-wider text-white bg-[#040405] rounded shadow-md transition duration-300 hover:bg-[#D1A046]"
           >
            PARTICIPEZ
           </a>
@@ -144,7 +144,7 @@
             <div class="relative h-56 max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12 flex">
                 <a
                     href="/shop"
-                    class="mt-28 inline-flex items-center justify-center h-10 px-6 font-bold text-lg tracking-wider text-white bg-[#D19F46] rounded shadow-md "
+                    class="mt-28 inline-flex items-center justify-center h-10 px-6 font-bold text-lg tracking-wider text-white bg-[#D19F46] rounded shadow-md transition duration-300 hover:bg-black"
                     >
                     PARTICIPEZ
                 </a>
