@@ -46,7 +46,7 @@
             </div>
     </div>
     <div class='px-16 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20'>
-    <form autocomplete="off" action="/checkout" methodK="POST" name="myForm">
+    <form autocomplete="off" action="/checkout" method="POST" name="myForm">
         <div class='grid w-full gap-10 row-gap-8 sm:row-gap-10 lg:grid-cols-3  sm:mx-auto'>
             <!-- Customer Infos section -->
             <div class='flex flex-col'>
