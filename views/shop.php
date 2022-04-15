@@ -377,7 +377,7 @@
             <!-- Order section -->
             <div class='flex flex-col'>
                 <div class='relative w-full flex items-center justify-center  rounded-3xl border-2 border-[#D19F46]'>
-                    <img src='../assets/images/v1.0.0/ticket.png' class="w-auto h-56"alt="TICKET" />
+                    <img src='../assets/images/v1.0.0/ticketGif.gif' class="w-auto h-56"alt="TICKET" />
                 </div>
                 <!-- Order Quantity controls -->
                 <div class="relative z-10 flex bg-[#D19F46] mx-auto w-1/2 items-center justify-around h-12 -mt-6 rounded-full">
