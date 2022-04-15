@@ -32,8 +32,8 @@ let price = 29.9;
 let clicked = 0;
 
 var timerID = setTimeout(() => {
-  content.style.visibility = "hidden";
-  content.style.opacity = "0";
+  content.style.visibility = "block";
+  content.style.opacity = "1";
 }, 5000);
 
 priceInput.value = price + "€";
@@ -41,10 +41,10 @@ nbrTicket.addEventListener("keyup", () => {
   clearTimeout(timerID);
   let ggwp = Number(nbrTicket.value);
   showMessagePrice(ggwp, price);
-  timerID = setTimeout(() => {
-    content.style.visibility = "hidden";
-    content.style.opacity = "0";
-  }, 5000);
+  // timerID = setTimeout(() => {
+  //   content.style.visibility = "block";
+  //   content.style.opacity = "1";
+  // }, 5000);
 });
 
 minus.addEventListener("click", () => {
@@ -55,10 +55,10 @@ minus.addEventListener("click", () => {
   let ggwp = Number(nbrTicket.value);
   showMessagePrice(ggwp, price);
   clicked = 1;
-  timerID = setTimeout(() => {
-    content.style.visibility = "hidden";
-    content.style.opacity = "0";
-  }, 5000);
+  // timerID = setTimeout(() => {
+  //   content.style.visibility = "hidden";
+  //   content.style.opacity = "0";
+  // }, 5000);
 });
 
 plus.addEventListener("click", () => {
@@ -67,10 +67,10 @@ plus.addEventListener("click", () => {
   clicked = 1;
   let ggwp = Number(nbrTicket.value);
   showMessagePrice(ggwp, price);
-  timerID = setTimeout(() => {
-    content.style.visibility = "hidden";
-    content.style.opacity = "0";
-  }, 5000);
+  // timerID = setTimeout(() => {
+  //   content.style.visibility = "hidden";
+  //   content.style.opacity = "0";
+  // }, 5000);
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 popover.addEventListener("click", () => {
@@ -80,8 +80,8 @@ popover.addEventListener("click", () => {
     content.style.transform = "translate(0, -20px)";
     clicked = 1;
   } else {
-    content.style.visibility = "hidden";
-    content.style.opacity = "0";
+    // content.style.visibility = "hidden";
+    // content.style.opacity = "0";
     clicked = 0;
   }
 });
