@@ -10,8 +10,8 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', 'views/payment.php');
     $r->addRoute('GET', '/cancel', 'views/cancel.php');
     // $r->addRoute('GET', '/success', 'views//success.php?session_id={CHECKOUT_SESSION_ID}');
-    // $r->addRoute('GET', '/success', 'views/success.php'); // SUCCESS PAGE VERSUIN 0 
-    $r->addRoute('GET', '/success', 'views/success-v1.php'); // SUCCESS PAGE VERSUIN 1
+    $r->addRoute('GET', '/success', 'views/success.php'); // SUCCESS PAGE VERSUIN 0 
+    // $r->addRoute('GET', '/success', 'views/success-v1.php'); // SUCCESS PAGE VERSUIN 1
     // $r->addRoute('GET', '/mail', 'views/email.html'); // EMAIL TEMPLATE VERSION 0
     $r->addRoute('GET', '/mail', 'views/email-v1.html'); // EMAIL TEMPLATE VERSION 0
     $r->addRoute('POST', '/checkout', 'class/checking.php');
