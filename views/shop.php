@@ -431,6 +431,7 @@
         </div>
     </form>
 </div>
+<?php include('includes/social.php'); ?>
 
 <!-- Footer -->
 <?php include('includes/footer.php'); ?>
