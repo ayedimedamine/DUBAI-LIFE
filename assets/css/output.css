@@ -1090,6 +1090,10 @@ select {
   height: 24rem;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .w-full {
   width: 100%;
 }
