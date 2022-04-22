@@ -218,7 +218,7 @@ switch ($event->type) {
       
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     
-    $mailer->sendMail($recieverEmail,$subject,$body);
+    $mailer->sendMail($recieverEmail,$subject,"<p>hey there</p>");
 
 
    
