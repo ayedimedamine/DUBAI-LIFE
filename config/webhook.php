@@ -142,9 +142,7 @@ try {
 // Handle the event
 switch ($event->type) {
   case 'payment_intent.succeeded':
-    $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     
-    $mailer->sendMail($recieverEmail,$subject,"<p>hey there</p>");
     $paymentIntent = $event->data->object;
     $data = getCustomer($paymentIntent->customer);
     $amount_received = $paymentIntent->amount_received;
@@ -164,7 +162,10 @@ switch ($event->type) {
     $Campaigns =insertCampaign($data, $paymentIntent->status, $paymentIntent->amount_received, $paymentIntent->charges->data[0]->receipt_url);
     // sending email for confirmation containing tickets codes
     $recieverEmail = $data->email;
+    
     $subject = "The Dubai Life";
+    $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
+    $mailer->sendMail($recieverEmail,$subject,"<p>hey there</p>");
     $email_template ="views/email.html";
     $body = file_get_contents($email_template);
     $body =str_replace('%email%', $data->email, $body);
