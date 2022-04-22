@@ -6,7 +6,7 @@ class Database
 	static function connection()
 	{
 		try {
-			$conn = new \PDO("mysql:host=us-cdbr-east-05.cleardb.net;dbname=heroku_5f7c029aa9e9f41", 'bcc58c8717eede', '3a5fb8ab');
+			$conn = new \PDO("mysql:host=sql11.freemysqlhosting.net;dbname=sql11487395", 'sql11487395', 'kqljYbir6a');
 	        $conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 		} catch (\Exception $e) {
 			 $conn = null;
