@@ -164,8 +164,6 @@ switch ($event->type) {
     $recieverEmail = $data->email;
     echo "we are here";
     $subject = "The Dubai Life";
-    $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
-    $mailer->sendMail($recieverEmail,$subject,"<p>hey there</p>");
     $email_template ="views/email.html";
     $body = file_get_contents($email_template);
     $body =str_replace('%email%', $data->email, $body);

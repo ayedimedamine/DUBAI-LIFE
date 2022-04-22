@@ -10,7 +10,7 @@ $DB_PASSWORD="3a5fb8ab";
 
 $SMTP_HOST ="smtp.zoho.eu";
 $SMTP_USER ="admin@the-dubai-life.com";
-$SMTP_PASSWORD ="ECQsqcRcV7Qdàà";
+$SMTP_PASSWORD ="ECQsqcRcV7Qd";
 $SMTP_PORT  ="587";
 
 // $SMTP_HOST ="smtp.mailtrap.io";
