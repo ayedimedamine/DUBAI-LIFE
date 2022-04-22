@@ -42,7 +42,10 @@ use PHPMailer\PHPMailer\PHPMailer;
             $mail->Subject = $subject;
             $mail->Body    = $body;
             $mail->AltBody = $body;
+            echo "message sent";
             $mail->send();
+            echo "message sent";
+
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
