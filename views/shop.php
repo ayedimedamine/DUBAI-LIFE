@@ -52,7 +52,7 @@
             <div class='flex flex-col'>
                 <div class="space-y-3">
                     <input
-                    placeholder="Prénpm & nom"
+                    placeholder="Prénom & nom"
                     name="Nom"
                     required=""
                     type="text"
