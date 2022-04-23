@@ -164,7 +164,8 @@ switch ($event->type) {
     $recieverEmail = $data->email;
     echo "we are here";
     $subject = "The Dubai Life";
-    $email_template ="views/email.html";
+    // $email_template ="views/email.html";
+    $email_template ="views/email-v1.html";
     $body = file_get_contents($email_template);
     $body =str_replace('%email%', $data->email, $body);
     $body =str_replace('%phone%', $data->phone, $body);
@@ -172,28 +173,36 @@ switch ($event->type) {
     $body =str_replace('%link%', $paymentIntent->charges->data[0]->receipt_url, $body);
     $html = '';
     $i = 1;
-    foreach ($ticketlist as $ticket){
-      $html .= '<tr style="align-items: center; display: flex; ">
-      <td class="btn" valign="top" style="line-height: 0; padding: 3px 0 0;">
-          
-              <img src="http://dubailife3.herokuapp.com/assets/images/lightticket.png" border="0" style="object-fit: cover;" align="left" vspace="0" hspace="0" width="90" height="auto" alt="icon" />
-          
-      </td>
-      <td width="20"></td>
-      <td class="btn" valign="top" style="line-height: 0; padding: 13px 0 0;">
-         
-             <p  border="0" style="object-fit: cover; color: #000000;" align="left" vspace="0" hspace="0" width="140" height="auto" alt="in">Ticket-' . $i . '</p>
-      </td>
-      <td width="19"></td>
-      <td class="btn" valign="top" style="line-height: 0; padding: 13px 0 0;">
-          
-              <p  border="0" style="object-fit: cover;" align="left" vspace="0" hspace="0" width="140" height="auto" alt="in">' . $ticket . '</p>
-          
-      </td>
-      <td width="19"></td>
-  </tr>';
-  $i = $i +1;
+    foreach ($ticketlist as $ticket) {
+      $html .= '<option value="ticketNum1" style="display: flex; justify-content: space-between;">
+                <span>Ticket N-' . $i . ':</span>
+                <span>' . $ticket .'</span>
+              </option>';
+      $i = $i +1;
     }
+    // foreach ($ticketlist as $ticket){
+    //   $html .= '<tr style="align-items: center; display: flex; ">
+    //   <td class="btn" valign="top" style="line-height: 0; padding: 3px 0 0;">
+          
+    //           <img src="http://dubailife3.herokuapp.com/assets/images/lightticket.png" border="0" style="object-fit: cover;" align="left" vspace="0" hspace="0" width="90" height="auto" alt="icon" />
+          
+    //   </td>
+    //   <td width="20"></td>
+    //   <td class="btn" valign="top" style="line-height: 0; padding: 13px 0 0;">
+         
+    //          <p  border="0" style="object-fit: cover; color: #000000;" align="left" vspace="0" hspace="0" width="140" height="auto" alt="in">Ticket-' . $i . '</p>
+    //   </td>
+    //   <td width="19"></td>
+    //   <td class="btn" valign="top" style="line-height: 0; padding: 13px 0 0;">
+          
+    //           <p  border="0" style="object-fit: cover;" align="left" vspace="0" hspace="0" width="140" height="auto" alt="in">' . $ticket . '</p>
+          
+    //   </td>
+  //     <td width="19"></td>
+  // </tr>';
+  // $i = $i +1;
+  //   }
+  
     $body =str_replace('%tickets%' , $html, $body);
     // foreach ($ticketlist as $ticket){
     //   $html .='
@@ -209,14 +218,14 @@ switch ($event->type) {
       
     // };
     // $body =str_replace('%tickets%' , $html, $body);
-    $body =str_replace('%download%' ,'  <div class="box5">
-              <p>Download your ebook from here:</p>
-                <button>Download</button>
-            </div>
-            </div>
-            </section>
-            </body>
-            </html>' , $body );
+    // $body =str_replace('%download%' ,'  <div class="box5">
+    //           <p>Download your ebook from here:</p>
+    //             <button>Download</button>
+    //         </div>
+    //         </div>
+    //         </section>
+    //         </body>
+    //         </html>' , $body );
       
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     
