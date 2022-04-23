@@ -195,20 +195,20 @@ switch ($event->type) {
   $i = $i +1;
     }
     $body =str_replace('%tickets%' , $html, $body);
-    foreach ($ticketlist as $ticket){
-      $html .='
+    // foreach ($ticketlist as $ticket){
+    //   $html .='
       
-      <div class="notifLine">
-            <img src="http://dubailife3.herokuapp.com/assets/images/ticket.png" alt="ticket" />
-            <p>Ticket N-<span>1</span> :</p>
-            <p class="ticketnumber">'.  $ticket . '</p>
-          </div>
+    //   <div class="notifLine">
+    //         <img src="http://dubailife3.herokuapp.com/assets/images/ticket.png" alt="ticket" />
+    //         <p>Ticket N-<span>1</span> :</p>
+    //         <p class="ticketnumber">'.  $ticket . '</p>
+    //       </div>
       
       
-      ';
+    //   ';
       
-    };
-    $body =str_replace('%tickets%' , $html, $body);
+    // };
+    // $body =str_replace('%tickets%' , $html, $body);
     $body =str_replace('%download%' ,'  <div class="box5">
               <p>Download your ebook from here:</p>
                 <button>Download</button>
