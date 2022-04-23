@@ -42,7 +42,7 @@ use PHPMailer\PHPMailer\PHPMailer;
             $mail->Subject = $subject;
             $mail->Body    = $body;
             $mail->AltBody = $body;
-            $mail->addAttachment('../assets/books/ebook.pdf');
+            $mail->addAttachment('assets/books/ebook.pdf');
             $mail->send();
 
         } catch (Exception $e) {
