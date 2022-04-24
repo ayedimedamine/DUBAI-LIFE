@@ -47,7 +47,7 @@
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
                 Acheter
                 </p>
-                <p class=" px-3 font-sans text-3xl font-bold tracking-wider text-black uppercase">
+                <p class=" px-3 font-sans text-xl md:text-3xl font-bold tracking-wider text-black uppercase">
                 1 E-BOOK
                 </p>
                 <p class=" px-3 font-sans text-5xl font-bold tracking-wider text-[#D19F46] uppercase">
@@ -56,7 +56,7 @@
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black uppercase">
                 1 TICKET
                 </p>
-                <p class=" px-3 font-sans text-3xl font-bold tracking-wider text-black">
+                <p class=" px-3 font-sans text-xl md:text-3xl font-bold tracking-wider text-black">
                 Pour être tiré au sort
                 </p>
             </div>
@@ -66,24 +66,24 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-[#D19F46] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                     </svg>
-                    <span class="text-white text-2xl font-bold">Maximisez vos chances de guagnez</span>
+                    <span class="text-white text-md md:text-xl font-bold">Maximisez vos chances de guagnez</span>
                 </div>
                 </div>
                 <div class="py-4 italic">
                 <p class="px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-4xl font-black mx-2">4</span>E-BOOKS = <span class="text-[#D19F46] text-4xl font-black mx-2">5</span> TICKETS
+                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">4</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">5</span> TICKETS
                 </p>
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-4xl font-black mx-2">8</span>E-BOOKS = <span class="text-[#D19F46] text-4xl font-black mx-2">11</span> TICKETS
+                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">8</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">11</span> TICKETS
                 </p>
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-4xl font-black mx-2">12</span>E-BOOKS = <span class="text-[#D19F46] text-4xl font-black mx-2">18</span> TICKETS
+                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">12</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">18</span> TICKETS
                 </p>
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-4xl font-black mx-2">16</span>E-BOOKS = <span class="text-[#D19F46] text-4xl font-black mx-2">25</span> TICKETS
+                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">16</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">25</span> TICKETS
                 </p>
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-4xl font-black mx-2">20</span>E-BOOKS = <span class="text-[#D19F46] text-4xl font-black mx-2">32</span> TICKETS
+                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">20</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">32</span> TICKETS
                 </p>
                 </div>
             </div>

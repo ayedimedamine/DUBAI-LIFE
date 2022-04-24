@@ -2068,6 +2068,11 @@ select {
     line-height: 1.75rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:tracking-wider {
     letter-spacing: 0.05em;
   }
