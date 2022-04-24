@@ -45,7 +45,7 @@
                <div class="spin"></div>
             </div>
     </div>
-    <div class='px-16 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20'>
+    <div class='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20'>
     <form autocomplete="off" action="/checkout" method="POST" name="myForm">
         <div class='grid w-full gap-10 row-gap-8 sm:row-gap-10 lg:grid-cols-3  sm:mx-auto'>
             <!-- Customer Infos section -->
@@ -384,14 +384,14 @@
                     <div class="text-white p-2 cursor-pointer" id="minus"><i class="fa fa-minus fa-lg" ></i></div>
                     <input
                     type="number" name="quantity" id="quantity" min="1" value="1" required 
-                    class="w-16 text-center text-white text-3xl font-bold bg-[#D19F46] border-none focus:[#D19F46] focus:ring-[#D19F46] py-0 focus:outline-none focus:shadow-outline"
+                    class="w-12 md:w-16 text-center text-white text:lg md:text-3xl font-bold bg-[#D19F46] border-none focus:[#D19F46] focus:ring-[#D19F46] py-0 focus:outline-none focus:shadow-outline"
                     />
                     <div class="text-white p-2 cursor-pointer" id="plus"><i class="fa fa-plus fa-lg" ></i></div>
                 </div>
                 <!-- Order price -->
                 <div class="mt-6 ml-2 grid grid-cols-5 h-12 items-center justify-start border-2 border-[#D19F46] rounded-full">
                     <p class="col-span-2">
-                    <span class="font-bold text-2xl tracking-wider text-white bg-[#D19F46] rounded-full px-8 py-[10px] -ml-2">Prix</span>
+                    <span class="font-bold text-lg md:text-2xl tracking-wider text-white bg-[#D19F46] rounded-full px-8 py-[14px] md:py-[10px] -ml-2">Prix</span>
                     </p>
                     <div class="flex items-center justify-center col-span-3 text-center font-bold text-2xl">
                     <input
@@ -399,7 +399,7 @@
                         type="text"
                         value="29.90"
                         disabled 
-                        class="text-center w-full font-bold text-2xl bg-transparent border-none py-0"
+                        class="text-center w-full font-bold text-lg md:text-2xl bg-transparent border-none py-0"
                     />
                     </div>
                 </div>

@@ -1071,10 +1071,9 @@ footer::before {
 }
 @media screen and (max-width: 420px) {
   .popover__content {
-    left: -20px;
     margin: 0 auto;
     font-size: 14px;
-    width: 320px;
+    width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 0px;
     border-left: none;
