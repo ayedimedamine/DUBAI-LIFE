@@ -1016,8 +1016,8 @@ select {
   margin-bottom: 1rem;
 }
 
-.-mr-4 {
-  margin-right: -1rem;
+.-mr-2 {
+  margin-right: -0.5rem;
 }
 
 .mt-0 {
@@ -1034,10 +1034,6 @@ select {
 
 .-ml-2 {
   margin-left: -0.5rem;
-}
-
-.-mr-2 {
-  margin-right: -0.5rem;
 }
 
 .block {
@@ -1156,6 +1152,10 @@ select {
   width: 8rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -1164,16 +1164,12 @@ select {
   width: 50%;
 }
 
-.w-8 {
-  width: 2rem;
-}
-
 .w-12 {
   width: 3rem;
 }
 
-.w-28 {
-  width: 7rem;
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-xl {
@@ -1535,19 +1531,14 @@ select {
   padding-bottom: 3rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .py-8 {
@@ -1563,11 +1554,6 @@ select {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.py-\[14px\] {
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 
 .pt-16 {
@@ -2006,12 +1992,12 @@ select {
     display: none;
   }
 
-  .md\:w-16 {
-    width: 4rem;
-  }
-
   .md\:w-56 {
     width: 14rem;
+  }
+
+  .md\:w-16 {
+    width: 4rem;
   }
 
   .md\:max-w-full {
@@ -2069,6 +2055,11 @@ select {
     padding-right: 6rem;
   }
 
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2082,11 +2073,6 @@ select {
   .md\:py-\[10px\] {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .md\:pt-0 {
