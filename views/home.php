@@ -106,12 +106,12 @@
             </div>
         </div>
         <div class="relative w-full cursor-pointer bg-black py-12">
-             <p class="text-center text-white text-2xl font-semibold my-2 border-t border-white mx-4 py-4">
+             <p class="text-center text-white tetx-lg md:text-2xl font-semibold my-2 border-t border-white mx-4 py-4">
                 <span class='font-medium opacity-95'>Gagnez:</span> visa <span class='font-medium opacity-95'>+</span> billets <span class='font-medium opacity-95'>+</span> ouverture de société <span class='font-medium opacity-95'>+</span> appartement avec piscine privée à Dubaï <span class='font-medium opacity-95'>et</span> pleins d'autres cadeux
             </p>
              <p class="w-32 mx-auto mb-4 border-t border-white"><p>
-            <img class="absolute right-0 w-56 object-cover h-auto -mr-4 mt-0" src="../assets/images/v1.0.0/gift.png" alt="The Dubai Life" />
-            <div class="px-16">
+            <img class="absolute right-0 w-28 md:w-56 object-cover h-auto -mr-2 md:-mr-4 mt-0" src="../assets/images/v1.0.0/gift.png" alt="The Dubai Life" />
+            <div class="px-4 md:px-16">
               <img class="object-cover h-96 mx-auto" src="../assets/images/v1.0.0/banner.png" alt="The Dubai Life" />
             </div>
         </div>
