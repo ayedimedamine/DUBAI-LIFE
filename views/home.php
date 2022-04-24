@@ -112,7 +112,7 @@
              <p class="w-32 mx-auto mb-4 border-t border-white"><p>
             <img class="absolute right-0 w-28 md:w-56 object-cover h-auto -mr-2 md:-mr-4 mt-0" src="../assets/images/v1.0.0/gift.png" alt="The Dubai Life" />
             <div class="px-4 md:px-16">
-              <img class="object-cover h-96 mx-auto" src="../assets/images/v1.0.0/banner.png" alt="The Dubai Life" />
+              <img class="object-fit h-96 mx-auto" src="../assets/images/v1.0.0/banner.png" alt="The Dubai Life" />
             </div>
         </div>
         <div class="mt-6 max-w-xl px-8 block md:hidden">

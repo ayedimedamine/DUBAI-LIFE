@@ -1073,7 +1073,7 @@ footer::before {
   .popover__content {
     margin: 0 auto;
     font-size: 14px;
-    padding: 15px 8px;
+    padding: 15px;
 
     width: 100%;
     border-bottom-left-radius: 20px;
