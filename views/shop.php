@@ -420,12 +420,14 @@
                     <p>
                 </div>
                  <p class="oldP hidden"></p>
-                  <div class="popover__wrapper icon">
-                    <i class="fa-solid fa-circle-info" id="popover__title"></i>
-                    <div class="popover__content">
-                      <p class="message"></p>
-                    </div>
-                  </div>
+                  
+                 <div class="popover__wrapper icon ">
+                          <i class="fa-solid fa-circle-info" id="popover__title"></i>
+                          <div class="popover__content">
+                              <p class="message mx-auto"></p>
+                            </div>
+                        </div>
+                 
             </div>
         </div>
         </div>

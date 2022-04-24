@@ -952,14 +952,18 @@ footer::before {
   text-align: center;
   animation: heartbeat 10s infinite;
   cursor: pointer;
-  visibility: hidden;
+  visibility: visible;
+  position: absolute;
+  top: -80px;
+  left: 0;
 }
 
 .popover__wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 150px;
+  width: 100%;
   float: right;
 }
 .popover__content {
@@ -967,7 +971,8 @@ footer::before {
   visibility: hidden;
   position: absolute;
   right: 0px;
-  bottom: 15px;
+  top: -100px;
+  /* bottom: 15px; */
   transform: translate(-10px, 100px);
   background-color: #fff;
   padding: 1.5rem;
@@ -1010,25 +1015,25 @@ footer::before {
 }
 @media screen and (max-width: 1245px) {
   .popover__content {
-    left: -50px;
+    /* left: -50px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 0px;
     border-left: none;
     border-right: 5px solid #d1a046;
-    left: -240px;
+    /* left: -240px; */
     width: 250px;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 @media screen and (max-width: 985px) {
   .popover__content {
-    left: 30px;
+    left: 50px;
     bottom: 15px;
     transform: translate(-10px, 100px);
     background-color: #fff;
-    padding: 1.5rem;
+    padding: 20px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    width: 300px;
+    width: 340px;
     border-radius: 24px;
     border-left: 5px solid #d1a046;
     border-bottom: 5px solid #d1a046;
@@ -1037,7 +1042,8 @@ footer::before {
 }
 @media screen and (max-width: 620px) {
   .popover__content {
-    left: -50px;
+    /* left: 0px; */
+    padding: 1.5rem;
   }
 }
 @media screen and (max-width: 520px) {
@@ -1058,16 +1064,17 @@ footer::before {
     border-bottom-right-radius: 20px;
     /* border-left: none; */
     border-right: 5px solid #d1a046;
-    left: -120px;
-    width: 250px;
-    padding: 1rem;
+    left: 0px;
+    width: 300px;
+    padding: 1.5rem;
   }
 }
 @media screen and (max-width: 420px) {
   .popover__content {
-    left: -200px;
+    left: -20px;
+    margin: 0 auto;
     font-size: 14px;
-    width: 220px;
+    width: 320px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 0px;
     border-left: none;

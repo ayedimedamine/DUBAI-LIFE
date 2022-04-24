@@ -46,7 +46,7 @@ nbrTicket.addEventListener("keyup", () => {
   //   content.style.opacity = "1";
   // }, 5000);
 });
-
+// showMessagePrice(ggwp, price);
 minus.addEventListener("click", () => {
   if (nbrTicket.value > 1) {
     nbrTicket.value--;
@@ -72,6 +72,7 @@ plus.addEventListener("click", () => {
   //   content.style.opacity = "0";
   // }, 5000);
 });
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 popover.addEventListener("click", () => {
   if (clicked === 0) {
@@ -85,6 +86,10 @@ popover.addEventListener("click", () => {
     clicked = 0;
   }
 });
+content.style.visibility = "visible";
+content.style.opacity = "1";
+content.style.transform = "translate(0, -20px)";
+message.innerHTML = `achetez <span> 1 </span> autres tickets pour avoir <span>1</span> ticket bonus et économisez <span> 29.90 &euro; </span>.`;
 //All about Price logic (bonus,price,total,text etc ....) :
 const showMessagePrice = (quantity, unitPrice) => {
   let bonus = 0;
