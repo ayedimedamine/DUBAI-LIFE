@@ -1042,7 +1042,7 @@ footer::before {
 }
 @media screen and (max-width: 620px) {
   .popover__content {
-    /* left: 0px; */
+    width: 100%;
     padding: 1.5rem;
   }
 }
@@ -1065,17 +1065,17 @@ footer::before {
     /* border-left: none; */
     border-right: 5px solid #d1a046;
     left: 0px;
-    width: 300px;
-    padding: 1.5rem;
+    width: 100%;
+    padding: 15px 30px;
   }
 }
 @media screen and (max-width: 420px) {
   .popover__content {
-    margin: 0 auto;
+    margin-left: 50px;
     font-size: 14px;
-    padding: 15px;
+    padding: 10px 15px 30px 15px;
 
-    width: 100%;
+    width: 80%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 0px;
     border-left: none;
