@@ -42,7 +42,7 @@
                   :aria-expanded="open"
                   :aria-controls="$id('dropdown-button')"
                   type="button"
-                  class="border border-black py-2 rounded shadow flex text-white items-center transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1"
+                  class="border border-black py-2 rounded shadow flex text-sm text-white items-center transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1"
               >
                   <span class="mr-1 font-normal tracking-wide ">Immobilier</span>
                 <span class="mt-1"> <i class="fa fa-chevron-down"></i></span>
@@ -81,9 +81,9 @@
           </div>
       </li>
       <!-- End Drop Down Menu -->
-      <li><a href="https://the-dubai-life.com/expatriation/" target="_blank" class="flex font-normal tracking-wide text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">S'installer à Dubai</a></li>
-      <li><a href="https://the-dubai-life.com/creer-une-entreprise/" target="_blank" class="flex font-normal tracking-wide text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">Business</a></li>
-      <li><a href="https://the-dubai-life.com/investir/" target="_blank" class="flex font-normal tracking-wide text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">Investir</a></li>
+      <li><a href="https://the-dubai-life.com/expatriation/" target="_blank" class="flex font-normal text-sm text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">S'installer à Dubai</a></li>
+      <li><a href="https://the-dubai-life.com/creer-une-entreprise/" target="_blank" class="flex font-normal text-sm tracking-wide text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">Business</a></li>
+      <li><a href="https://the-dubai-life.com/investir/" target="_blank" class="flex font-normal tracking-wide text-sm text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">Investir</a></li>
       <li class="text-[#7A7A7A]">
         <a href="tel:971 58 582 3822">
           <i class="fa fa-phone fa-lg"></i>
