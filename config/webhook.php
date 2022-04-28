@@ -172,7 +172,7 @@ switch ($event->type) {
     $body =str_replace('%num_tickets%', count($ticketlist), $body);
     $body =str_replace('%link%', $paymentIntent->charges->data[0]->receipt_url, $body);
     $html = '';
-    // $i = 1;
+    $i = 1;
     // foreach ($ticketlist as $ticket) {
     //   $html .= '<option value="ticketNum1" style="display: flex; justify-content: space-between;">
     //             <span>Ticket N-' . $i . ':</span>
