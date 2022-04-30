@@ -173,60 +173,87 @@ switch ($event->type) {
     $body =str_replace('%link%', $paymentIntent->charges->data[0]->receipt_url, $body);
     $html = '';
     $i = 1;
+    // foreach ($ticketlist as $ticket) {
+    //   $html .= '<option value="ticketNum1" style="display: flex; justify-content: space-between;">
+    //             <span>Ticket N-' . $i . ':</span>
+    //             <span>' . $ticket .'</span>
+    //           </option>';
+    //   $i = $i +1;
+    // };
     foreach ($ticketlist as $ticket) {
-      $html .= '<option value="ticketNum1" style="display: flex; justify-content: space-between;">
-                <span>Ticket N-' . $i . ':</span>
-                <span>' . $ticket .'</span>
-              </option>';
-      $i = $i +1;
-    }
-    // foreach ($ticketlist as $ticket){
-    //   $html .= '<tr style="align-items: center; display: flex; ">
-    //   <td class="btn" valign="top" style="line-height: 0; padding: 3px 0 0;">
-          
-    //           <img src="http://dubailife3.herokuapp.com/assets/images/lightticket.png" border="0" style="object-fit: cover;" align="left" vspace="0" hspace="0" width="90" height="auto" alt="icon" />
-          
-    //   </td>
-    //   <td width="20"></td>
-    //   <td class="btn" valign="top" style="line-height: 0; padding: 13px 0 0;">
-         
-    //          <p  border="0" style="object-fit: cover; color: #000000;" align="left" vspace="0" hspace="0" width="140" height="auto" alt="in">Ticket-' . $i . '</p>
-    //   </td>
-    //   <td width="19"></td>
-    //   <td class="btn" valign="top" style="line-height: 0; padding: 13px 0 0;">
-          
-    //           <p  border="0" style="object-fit: cover;" align="left" vspace="0" hspace="0" width="140" height="auto" alt="in">' . $ticket . '</p>
-          
-    //   </td>
-  //     <td width="19"></td>
-  // </tr>';
-  // $i = $i +1;
-  //   }
+    $html .= '<tr
+    style="
+      align-items: center;
+      display: flex;
+      margin-bottom: 20px;
+    "
+  >
+    <td
+      valign="top"
+      style="
+        line-height: 0;
+        padding: 0;
+        border: 1px solid #d19f46;
+        border-radius: 20px;
+      "
+    >
+      <img
+        src="https://dubailife3.herokuapp.com/assets/images/v1.0.0/ticket.png"
+        border="0"
+        style="object-fit: cover"
+        align="left"
+        vspace="0"
+        hspace="0"
+        alt="ticket"
+        width="100px"
+        height="100px"
+      />
+    </td>
+    <td width="20"></td>
+    <td
+      valign="top"
+      style="line-height: 0; padding: 3px 0 0"
+    >
+      <p
+        border="0"
+        style="
+          font-weight: bold;
+          font-size: 20px;
+          color: #000000;
+        "
+        align="left"
+        vspace="0"
+        hspace="0"
+      >
+        Ticket N-' . $i . ':
+      </p>
+    </td>
+    <td width="19"></td>
+    <td
+      valign="top"
+      style="line-height: 0; padding: 3px 0 0"
+    >
+      <p
+        border="0"
+        style="
+          font-weight: normal;
+          font-size: 20px;
+          color: #000000;
+        "
+        align="left"
+        vspace="0"
+        hspace="0"
+      >
+      ' . $ticket .'
+      </p>
+    </td>
+    <td width="19"></td>
+  </tr>';
+  $i = $i +1;
+    };
+   
   
     $body =str_replace('%tickets%' , $html, $body);
-    // foreach ($ticketlist as $ticket){
-    //   $html .='
-      
-    //   <div class="notifLine">
-    //         <img src="http://dubailife3.herokuapp.com/assets/images/ticket.png" alt="ticket" />
-    //         <p>Ticket N-<span>1</span> :</p>
-    //         <p class="ticketnumber">'.  $ticket . '</p>
-    //       </div>
-      
-      
-    //   ';
-      
-    // };
-    // $body =str_replace('%tickets%' , $html, $body);
-    // $body =str_replace('%download%' ,'  <div class="box5">
-    //           <p>Download your ebook from here:</p>
-    //             <button>Download</button>
-    //         </div>
-    //         </div>
-    //         </section>
-    //         </body>
-    //         </html>' , $body );
-      
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     
     $mailer->sendMail($recieverEmail,$subject, $body);
