@@ -66,7 +66,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-[#D19F46] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                     </svg>
-                    <span class="text-white text-md md:text-xl font-bold">Maximisez vos chances de guagnez</span>
+                    <span class="text-white text-md md:text-xl font-bold">Maximisez vos chances de gagnez</span>
                 </div>
                 </div>
                 <div class="py-4 italic">
@@ -107,7 +107,7 @@
         </div>
         <div class="relative w-full cursor-pointer bg-black py-12">
              <p class="text-center text-white tetx-lg md:text-2xl font-semibold my-2 border-t border-white mx-4 py-4">
-                <span class='font-medium opacity-95'>Gagnez:</span> visa <span class='font-medium opacity-95'>+</span> billets <span class='font-medium opacity-95'>+</span> ouverture de société <span class='font-medium opacity-95'>+</span> appartement avec piscine privée à Dubaï <span class='font-medium opacity-95'>et</span> pleins d'autres cadeux
+                <span class='font-medium opacity-95'>Gagnez :</span> Visa <span class='font-medium opacity-95'>+</span> Billets <span class='font-medium opacity-95'>+</span> Ouverture De Société <span class='font-medium opacity-95'>+</span> Appartement Avec Piscine Privée à Dubaï <span class='font-medium opacity-95'>Et</span> Pleins D'autres Cadeux
             </p>
              <p class="w-32 mx-auto mb-4 border-t border-white"><p>
             <img class="absolute right-0 w-28 md:w-56 object-cover h-auto -mr-2 md:-mr-4 mt-0" src="../assets/images/v1.0.0/gift.png" alt="The Dubai Life" />

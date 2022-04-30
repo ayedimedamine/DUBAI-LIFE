@@ -28,7 +28,7 @@ let totalTickets = document.getElementById("listTick");
 let message = document.querySelector(".message");
 let popover = document.getElementById("popover__title");
 let content = document.querySelector(".popover__content");
-let price = 29.9;
+let price = 24.9;
 let clicked = 0;
 
 var timerID = setTimeout(() => {
@@ -89,7 +89,7 @@ popover.addEventListener("click", () => {
 content.style.visibility = "visible";
 content.style.opacity = "1";
 content.style.transform = "translate(0, -20px)";
-message.innerHTML = `achetez <span> 3 </span> autres tickets pour avoir <span>1</span> ticket bonus et économisez <span> 29.90 &euro; </span>.`;
+message.innerHTML = `achetez <span> 3 </span> autres tickets pour avoir <span>1</span> ticket bonus et économisez <span> 24.90 &euro; </span>.`;
 //All about Price logic (bonus,price,total,text etc ....) :
 const showMessagePrice = (quantity, unitPrice) => {
   let bonus = 0;

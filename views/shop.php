@@ -397,7 +397,7 @@
                     <input
                         id="priceT" 
                         type="text"
-                        value="29.90"
+                        value="24.90"
                         disabled 
                         class="text-center w-full font-bold text-lg md:text-2xl bg-transparent border-none py-0"
                     />
@@ -416,7 +416,7 @@
                     <p class="col-span-7">
                     Achetez <span id="showPresent" class="font-bold">3</span> autres tickets </br>
                     pour avoir <span id="listTick" class="font-bold">1</span> ticket bonus </br>
-                    et économisez <input class="font-bold bg-transparent w-24 text-center p-0 border-none" type="text" value="29.90" disabled id="priceT" /> <span class="font-bold">€</span>.
+                    et économisez <input class="font-bold bg-transparent w-24 text-center p-0 border-none" type="text" value="24.90" disabled id="priceT" /> <span class="font-bold">€</span>.
                     <p>
                 </div>
                  <p class="oldP hidden"></p>
