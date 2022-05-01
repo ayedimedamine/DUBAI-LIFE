@@ -28,7 +28,7 @@ let totalTickets = document.getElementById("listTick");
 let message = document.querySelector(".message");
 let popover = document.getElementById("popover__title");
 let content = document.querySelector(".popover__content");
-let price = 24.90;
+let price = 24.9;
 let clicked = 0;
 
 var timerID = setTimeout(() => {
