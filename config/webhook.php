@@ -259,7 +259,8 @@ switch ($event->type) {
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     
     $mailer->sendMail($recieverEmail,$subject, $body);
-
+    http_response_code(200);
+    exit();
 
    
    // ... handle other event types
@@ -267,4 +268,4 @@ switch ($event->type) {
     echo 'Received unknown event type ' . $event->type;
 }
 
-http_response_code(200);
+http_response_code(400);
