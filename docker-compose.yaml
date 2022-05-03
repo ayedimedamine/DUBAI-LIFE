@@ -1,0 +1,20 @@
+version: '2'
+services:
+  dubailife:
+    build: ./
+    ports:
+        - 80:80
+    environment:
+      STRIPE_KEY: ${STRIPE_KEY}
+      PRICE_ID: ${PRICE_ID}
+      ENDPOINT_STRIPE_WEBHOOK_SECRET: ${ENDPOINT_STRIPE_WEBHOOK_SECRET}
+
+      DB_HOST : ${DB_HOST}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+
+      SMTP_HOST: ${SMTP_HOST}
+      SMTP_USER: ${SMTP_USER}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      SMTP_PORT: ${SMTP_PORT}
