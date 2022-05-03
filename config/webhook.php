@@ -22,8 +22,9 @@ require 'config.php';
 // test ets 
 
 function getCustomer($customer_id){
+  global $STRIPE_KEY;
     $stripe = new \Stripe\StripeClient(
-        'sk_test_51KbQ7zELeKscvw05hR8BK7dsl7C5tWFRvTKIau7EgayTzgONsIDJPrFjKQR1qlWoBpWY3HsVCIItL4wSqRnDUBBU005o2ytVOh'
+        $STRIPE_KEY
       );
       $client = $stripe->customers->retrieve(
         $customer_id,
@@ -108,8 +109,9 @@ function insertCampaign($customerMetadata, $paymentStatus, $amount_received, $in
 
 
 function updateCustomerData($customer_id, $metadata){
+    global $STRIPE_KEY;
     $stripe = new \Stripe\StripeClient(
-        'sk_test_51KbQ7zELeKscvw05hR8BK7dsl7C5tWFRvTKIau7EgayTzgONsIDJPrFjKQR1qlWoBpWY3HsVCIItL4wSqRnDUBBU005o2ytVOh'
+      $STRIPE_KEY
       );
       $stripe->customers->update(
         $customer_id,
@@ -118,7 +120,7 @@ function updateCustomerData($customer_id, $metadata){
 }
 
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
-$endpoint_secret = 'whsec_Ta9DfLzQVS7LF94BO4CwyWuMvQe6YOAw';
+
 
 
 $payload = @file_get_contents('php://input');
@@ -127,7 +129,7 @@ $event = null;
 
 try {
   $event = \Stripe\Webhook::constructEvent(
-    $payload, $sig_header, $endpoint_secret
+    $payload, $sig_header, $ENDPOINT_STRIPE_WEBHOOK_SECRET
   );
 } catch(\UnexpectedValueException $e) {
   // Invalid payload
