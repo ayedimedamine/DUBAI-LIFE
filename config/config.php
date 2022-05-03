@@ -1,7 +1,7 @@
 <?php
 
 $STRIPE_KEY='sk_test_51KbQ7zELeKscvw05hR8BK7dsl7C5tWFRvTKIau7EgayTzgONsIDJPrFjKQR1qlWoBpWY3HsVCIItL4wSqRnDUBBU005o2ytVOh';
-$PRICE_ID="price_1KbvfOELeKscvw05DMe8UnQe";
+$PRICE_ID="price_1KuG4CELeKscvw05vVw4l1UJ";
 
 $DB_HOST="us-cdbr-east-05.cleardb.net";
 $DB_DATABASE='heroku_5f7c029aa9e9f41';
