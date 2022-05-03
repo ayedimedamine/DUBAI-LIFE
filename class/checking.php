@@ -25,7 +25,7 @@ $quantity = $_POST['quantity'];
 
 header('Content-Type: application/json');
 
-  $YOUR_DOMAIN = 'https://dubailife3.herokuapp.com';
+  
 
 $metadata =[
   'name' => $nom,
@@ -66,7 +66,8 @@ $stripe = new \Stripe\StripeClient($STRIPE_KEY);
  */
 
 function generateDiscount( $quantity,  $price){
-$stripe = new \Stripe\StripeClient('sk_test_51KbQ7zELeKscvw05hR8BK7dsl7C5tWFRvTKIau7EgayTzgONsIDJPrFjKQR1qlWoBpWY3HsVCIItL4wSqRnDUBBU005o2ytVOh');
+  global $STRIPE_KEY;
+$stripe = new \Stripe\StripeClient($STRIPE_KEY);
   if ($quantity> 3){
       // $free_tickets = intdiv($quantity,4);
       $free_tickets = getFreeTicketsNumberV2($quantity);
@@ -120,8 +121,8 @@ if (!empty($data)) {
     
       'customer' => $client->id,
       'mode' => 'payment',
-      'success_url' => $YOUR_DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
-      'cancel_url' => 'https://the-dubai-life.com',
+      'success_url' => $DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
+      'cancel_url' => $DOMAIN,
       'metadata' => $metadata,
       'discounts'=> [[
         'coupon' => $data['coupon']
@@ -137,8 +138,8 @@ else {
       ]],
       'customer' => $client->id,
       'mode' => 'payment',
-      'success_url' => $YOUR_DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
-      'cancel_url' => "https://the-dubai-life.com",
+      'success_url' => $DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
+      'cancel_url' => $DOMAIN,
       'metadata' => $metadata,
     ]);
   }
