@@ -15,6 +15,7 @@ RUN chown -R www-data:www-data /var/www/
 WORKDIR /var/www/
 # RUN composer install
 COPY start-apache /usr/local/bin
-RUN php config/sql.php
+# RUN php config/sql.php
+
 CMD ["start-apache"]
 EXPOSE 80
