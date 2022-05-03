@@ -92,6 +92,7 @@
           display: block !important;
           width: 100% !important;
         }
+
         td[class="wrapper"] {
           padding: 0 !important;
         }
@@ -130,6 +131,12 @@
         th[class="tfoot"] {
           display: table-footer-group !important;
           width: 100% !important;
+        }
+      }
+      @media only screen and (max-width: 450) {
+        th[class="flex"] {
+          border-top: 5px solid #d19f46;
+          margin-top: 20px;
         }
       }
     </style>
@@ -261,7 +268,7 @@
                         <tr>
                           <td style="padding: 0">
                             <table width="100%" cellpadding="0" cellspacing="0">
-                              <tr>
+                              <tr style="vertical-align: middle">
                                 <th
                                   class="flex"
                                   width="330"
@@ -270,24 +277,18 @@
                                 >
                                   <p
                                     style="
-                                      border-top: 5px solid #d19f46;
-                                      margin-top: 45px;
+                                      border-bottom: 5px solid #d19f46;
+                                      height: 30px;
                                     "
                                   ></p>
                                 </th>
-                                <th
-                                  class="flex"
-                                  width="330"
-                                  align="left"
-                                  style="vertical-align: top; padding: 0"
-                                >
+                                <th width="330" align="left" style="padding: 0">
                                   <p
                                     style="
                                       font-family: Arial, Helvetica, sans-serif;
                                       text-align: center;
                                       font-weight: bold;
                                       font-size: 30px;
-                                      margin-top: 0x;
                                       color: #000;
                                     "
                                   >
@@ -298,14 +299,9 @@
                                   class="flex"
                                   width="330"
                                   align="left"
-                                  style="vertical-align: top; padding: 0"
+                                  style="padding: 0"
                                 >
-                                  <p
-                                    style="
-                                      border-top: 5px solid #d19f46;
-                                      margin-top: 45px;
-                                    "
-                                  ></p>
+                                  <p style="border-top: 5px solid #d19f46"></p>
                                 </th>
                               </tr>
                             </table>
@@ -662,6 +658,7 @@
                         </tr>
 
                         <!-- Scrollable ticket list -->
+
                         <table
                           width="100%"
                           cellpadding="0"
@@ -721,12 +718,12 @@
                                                       style="padding: 0 0 10px"
                                                     >
                                                       <table
-                                                        align="center"
                                                         style="margin: 0 auto"
                                                         cellpadding="0"
                                                         cellspacing="0"
                                                       >
                                                         <!-- Ticket 1 -->
+
                                                         <tr>
                                                           <td
                                                             class="i-120"
@@ -804,6 +801,7 @@
                                                                 background-color: #fff;
                                                                 border-radius: 4px;
                                                                 padding: 5px 0;
+                                                                white-space: nowrap;
                                                               "
                                                             >
                                                               0123456789a0123456789a0123456abca0123456789b
@@ -889,12 +887,14 @@
                                                                 background-color: #fff;
                                                                 border-radius: 4px;
                                                                 padding: 5px 0;
+                                                                white-space: nowrap;
                                                               "
                                                             >
                                                               0123456789a0123456789a0123456abca0123456789b
                                                             </span>
                                                           </td>
                                                         </tr>
+                                                        -->
                                                         <tr height="10"></tr>
                                                         <!-- Ticket 3 -->
                                                         <tr>
@@ -974,12 +974,14 @@
                                                                 background-color: #fff;
                                                                 border-radius: 4px;
                                                                 padding: 5px 0;
+                                                                white-space: nowrap;
                                                               "
                                                             >
                                                               0123456789a0123456789a0123456abca0123456789b
                                                             </span>
                                                           </td>
                                                         </tr>
+                                                        -->
                                                         <tr height="10"></tr>
                                                         <!-- Ticket 4 -->
                                                         <tr>
@@ -1059,12 +1061,14 @@
                                                                 background-color: #fff;
                                                                 border-radius: 4px;
                                                                 padding: 5px 0;
+                                                                white-space: nowrap;
                                                               "
                                                             >
                                                               0123456789a0123456789a0123456abca0123456789b
                                                             </span>
                                                           </td>
                                                         </tr>
+                                                        -->
                                                         <tr height="10"></tr>
                                                         <!-- Ticket 5 -->
                                                         <tr>
@@ -1144,12 +1148,14 @@
                                                                 background-color: #fff;
                                                                 border-radius: 4px;
                                                                 padding: 5px 0;
+                                                                white-space: nowrap;
                                                               "
                                                             >
                                                               0123456789a0123456789a0123456abca0123456789b
                                                             </span>
                                                           </td>
                                                         </tr>
+                                                        -->
                                                       </table>
                                                     </td>
                                                   </tr>
