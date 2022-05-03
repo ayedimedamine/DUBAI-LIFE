@@ -10,13 +10,13 @@ $DB_DATABASE = $_ENV['DB_DATABASE'];
 $DB_USERNAME = $_ENV['DB_USERNAME'];
 $DB_PASSWORD = $_ENV['DB_PASSWORD'];
 
-$DOMAIN = 'https://www.the-new-life.fr';
+$DOMAIN = 'https://dubailife3.herokuapp.com';
 $SMTP_HOST='smtp.zoho.eu';
 $SMTP_USER='admin@the-dubai-life.com';
 $SMTP_PASSWORD='ECQsqcRcV7Qd';
 $SMTP_PORT='587';
 
-
+// $DOMAIN = 'https://www.the-new-life.fr';
 // $STRIPE_KEY = getenv('STRIPE_KEY');
 // $PRICE_ID = getenv('PRICE_ID');
 // $ENDPOINT_STRIPE_WEBHOOK_SECRET = getenv('ENDPOINT_STRIPE_WEBHOOK_SECRET');
