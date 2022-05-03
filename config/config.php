@@ -11,7 +11,7 @@ $DB_HOST = $_ENV['DB_HOST'];
 $DB_DATABASE = $_ENV['DB_DATABASE'];
 $DB_USERNAME = $_ENV['DB_USERNAME'];
 $DB_PASSWORD = $_ENV['DB_PASSWORD'];
-$DOMAIN = 'https://dubailife3.herokuapp.com';
+$DOMAIN = 'https://www.the-new-life.fr';
 
 $SMTP_HOST = $_ENV['SMTP_HOST'];
 $SMTP_USER = $_ENV['SMTP_USER'];
@@ -20,7 +20,6 @@ $SMTP_PORT = $_ENV['SMTP_PORT'];
 
 // $STRIPE_KEY='sk_test_51KbQ7zELeKscvw05hR8BK7dsl7C5tWFRvTKIau7EgayTzgONsIDJPrFjKQR1qlWoBpWY3HsVCIItL4wSqRnDUBBU005o2ytVOh';
 // $PRICE_ID="price_1KuG4CELeKscvw05vVw4l1UJ";
-
 // $DB_HOST="us-cdbr-east-05.cleardb.net";
 // $DB_DATABASE='heroku_5f7c029aa9e9f41';
 // $DB_USERNAME="bcc58c8717eede";
