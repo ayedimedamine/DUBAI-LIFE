@@ -16,6 +16,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/mail', 'views/email-v1.html'); // EMAIL TEMPLATE VERSION 0
     $r->addRoute('POST', '/checkout', 'class/checking.php');
     $r->addRoute('POST', '/webhook', 'config/webhook.php');
+    $r->addRoute('GET', '/api', 'views/api.php');
 });
 
 // Fetch method and URI from somewhere

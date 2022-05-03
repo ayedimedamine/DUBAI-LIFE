@@ -41,5 +41,14 @@ class TempTicket{
         // return mysqli_fetch_array($query->fetch());
         return json_decode($query->fetch()['ticketcode']);
       }
+      public function apitest()
+      {
+        $query = $this->db->prepare('SELECT ticketcode FROM tempTickets');
+        $query->execute(
+          [
+          ]);
+        // return mysqli_fetch_array($query->fetch());
+        return json_decode($query->fetch()['ticketcode']);
+      }
 
 }
