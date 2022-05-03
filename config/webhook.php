@@ -27,8 +27,7 @@ function getCustomer($customer_id){
         $STRIPE_KEY
       );
       $client = $stripe->customers->retrieve(
-        $customer_id,
-        []
+        $customer_id
       );
       var_dump($client);
       return $client->metadata;
@@ -122,7 +121,6 @@ function updateCustomerData($customer_id, $metadata){
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
 
 
-
 $payload = @file_get_contents('php://input');
 $sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
 $event = null;
@@ -133,17 +131,13 @@ try {
   );
 } catch(\UnexpectedValueException $e) {
   // Invalid payload
-  http_response_code(400);
+  http_response_code(403);
   exit();
 } catch(\Stripe\Exception\SignatureVerificationException $e) {
   // Invalid signature
-  http_response_code(400);
+  http_response_code(401);
   exit();
 }
-echo $sig_header;
-echo $payload;
-http_response_code(201);
-exit();
 // Handle the event
 switch ($event->type) {
   case 'payment_intent.succeeded':
