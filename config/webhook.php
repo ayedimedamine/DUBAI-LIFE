@@ -140,7 +140,10 @@ try {
   http_response_code(400);
   exit();
 }
-
+echo $sig_header;
+echo $payload;
+http_response_code(201);
+exit();
 // Handle the event
 switch ($event->type) {
   case 'payment_intent.succeeded':
