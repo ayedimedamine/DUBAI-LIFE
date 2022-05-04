@@ -7,9 +7,7 @@
     
    $Tickets = new TempTicket();
    $tickets = $Tickets->apitest();
-    foreach ($tickets as $ticket){
-      echo json_encode($ticket);
-    }
+    echo json_encode($tickets, True);
     http_response_code(200);
     exit();
 
