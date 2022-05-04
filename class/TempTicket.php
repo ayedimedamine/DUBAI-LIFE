@@ -43,12 +43,9 @@ class TempTicket{
       }
       public function apitest()
       {
-        $query = $this->db->prepare('SELECT ticketcode FROM tempTickets');
-        $query->execute(
-          [
-          ]);
-        // return mysqli_fetch_array($query->fetch());
-        return json_decode($query->fetch()['ticketcode']);
+        $query = $this->db->prepare('SELECT id, email, reg_date FROM tickets');
+        $query->execute();
+        return $query->fetchAll();
       }
 
 }
