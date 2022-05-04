@@ -124,7 +124,10 @@ function updateCustomerData($customer_id, $metadata){
 $payload = @file_get_contents('php://input');
 $sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
 // $server_ips = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
-echo $_SERVER['HTTP_X_FORWARDED_FOR'];
+$server_ips = $_SERVER['HTTP_X_FORWARDED_FOR'];
+foreach ($server_ips as $ser){
+  echo $ser;
+}
 // foreach($server_ips as $req_ip) {
 //   if (!in_array($req_ip, $STRIPE_SERVER_IPS)){
 //     http_response_code(403);
