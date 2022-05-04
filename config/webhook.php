@@ -122,7 +122,11 @@ function updateCustomerData($customer_id, $metadata){
 
 
 $payload = @file_get_contents('php://input');
-$sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
+// $sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
+$sig_header = $_SERVER['HTTP_X_FORWARDED_FOR'];
+echo $sig_header;
+http_response_code(201);
+exit();
 $event = null;
 
 try {
