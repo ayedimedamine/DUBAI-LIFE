@@ -123,7 +123,14 @@ function updateCustomerData($customer_id, $metadata){
 
 $payload = @file_get_contents('php://input');
 $sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
-// $sig_header = $_SERVER['HTTP_X_FORWARDED_FOR']; for ips verification
+$server_ips = $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+foreach($server_ips as $req_ip) {
+  if (!in_array($req_ip, $STRIPE_SERVER_IPS)){
+    http_response_code(403);
+    exit();
+  }
+}
 
 $event = null;
 
@@ -163,7 +170,7 @@ switch ($event->type) {
     $Campaigns =insertCampaign($data, $paymentIntent->status, $paymentIntent->amount_received, $paymentIntent->charges->data[0]->receipt_url);
     // sending email for confirmation containing tickets codes
     $recieverEmail = $data->email;
-    echo "we are here";
+    // echo "we are here";
     $subject = "The Dubai Life";
     // $email_template ="views/email.html";
     $email_template ="views/email-v1.html";
