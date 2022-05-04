@@ -117,6 +117,7 @@ if (!empty($data)) {
         # Provide the exact Price ID (e.g. pr_1234) of the product you want to sell
         'price' => $PRICE_ID,
         'quantity' => $quantity + $data['free_tickets'],
+        'tax_rates'=> [$TAX_RATE_ID],
       ]],
     
       'customer' => $client->id,
@@ -135,6 +136,7 @@ else {
         # Provide the exact Price ID (e.g. pr_1234) of the product you want to sell
         'price' => $PRICE_ID,
         'quantity' => $quantity,
+        'tax_rates'=> [$TAX_RATE_ID],
       ]],
       'customer' => $client->id,
       'mode' => 'payment',

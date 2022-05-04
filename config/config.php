@@ -25,7 +25,7 @@ $dotenv->load();
 
 // PROD : 
 $DOMAIN = 'https://www.the-new-life.fr';
-
+$TAX_RATE_ID = 'txr_1KvrcFELeKscvw05wNCdJ7ST';
 $STRIPE_KEY = getenv('STRIPE_KEY');
 $STRIPE_SERVER_IPS = [
     "3.18.12.63",
@@ -43,6 +43,7 @@ $STRIPE_SERVER_IPS = [
     "130.176.100.93"
   ];
 $PRICE_ID = getenv('PRICE_ID');
+
 $ENDPOINT_STRIPE_WEBHOOK_SECRET = getenv('ENDPOINT_STRIPE_WEBHOOK_SECRET');
 
 $DB_HOST = getenv('DB_HOST');
