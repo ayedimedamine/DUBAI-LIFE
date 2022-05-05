@@ -40,6 +40,8 @@ $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
         var_dump($_SERVER['REQUEST_URI']);
+        var_dump($_SERVER['REQUEST_METHOD']);
+
         require 'views/404.php';
         // ... 404 Not Found
         break;
