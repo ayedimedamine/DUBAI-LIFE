@@ -20,7 +20,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/admin/login', 'views/login.php');
     $r->addRoute('POST', '/admin/login', 'class/Login.php');
     $r->addRoute('GET', '/admin/dashbord', 'views/dashboard.php');
-    $r->addRoute('GET', '/test', 'views/dashbord-test.php');
+    // $r->addRoute('GET', '/test', 'views/dashbord-test.php');
 });
 
 // Fetch method and URI from somewhere
@@ -36,6 +36,7 @@ $uri = rawurldecode($uri);
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
+        var_dump($_SERVER['REQUEST_URI']);
         require 'views/404.php';
         // ... 404 Not Found
         break;

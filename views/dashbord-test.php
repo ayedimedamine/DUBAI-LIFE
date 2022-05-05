@@ -1,3 +1,12 @@
+<?php
+
+    require 'vendor/autoload.php';
+    require 'class/Campaign.php';
+    
+   $campaigns = new Campaign();
+   $campaigns = $campaigns->getall();
+    // echo json_encode($campaigns, True);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,49 +22,58 @@
   </div>
   <div class="table-concept">
     <input class="table-radio" type="radio" name="table_radio" id="table_radio_0" checked="checked"/>
-    <div class="table-display">Showing 1 to 20
-      of 95 items
-    </div>
+    <div class="table-display"></div>
     <table>
       <thead>
         <tr>
-          <th></th>
           <th>No</th>
-          <th>FIRST HEADER</th>
-          <th>SECOND HEADER</th>
-          <th>THIRD HEADER</th>
-          <th>FOURTH HEADER</th>
+          <th>NOM</th>
+          <th>EMAIL</th>
+          <th>PHONE</th>
+          <th>ADDRESS</th>
+          <th>CITY</th>
+          <th>STATE</th>
+          <th>COUNTRY</th>
+          <th>ZIPCODE</th>
+          <th>QUANTITY</th>
+          <th>PAYE</th>
+          <th>FACTURE</th>
+          <th>DATE</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+          <?php 
+          foreach ($campaigns as $campaign){
+              echo "<tr>" . 
+              "<td>" .$campaign['id'] . "</td>" .
+              "<td>" .$campaign['nom'] . "</td>" .
+              "<td>" .$campaign['email'] . "</td>" .
+              "<td>" .$campaign['address'] . "</td>" .
+              "<td>" .$campaign['phone'] . "</td>" .
+              "<td>" .$campaign['state'] . "</td>" .
+              "<td>" .$campaign['country'] . "</td>" .
+              "<td>" .$campaign['zipCode'] . "</td>" .
+              "<td>" .$campaign['quantity'] . "</td>" .
+              "<td>" .$campaign['payment'] . "</td>" .
+              "<td>" .$campaign['paye'] . "</td>" .
+              "<td>" .$campaign['facture'] . "</td>" .
+              "<td>" .$campaign['reg_date'] . "</td>" .
+              "</tr>";
+              
+          }
+          ?>
+        <!-- <tr>
           <td>1</td>
           <td>This is Item number 1-1</td>
           <td>This is Item number 2-1</td>
           <td>This is Item number 3-1</td>
           <td>This is Item number 4-1</td>
           <td>This is Item number 5-1</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>This is Item number 1-2</td>
-          <td>This is Item number 2-2</td>
-          <td>This is Item number 3-2</td>
-          <td>This is Item number 4-2</td>
-          <td>This is Item number 5-2</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>This is Item number 1-3</td>
-          <td>This is Item number 2-3</td>
-          <td>This is Item number 3-3</td>
-          <td>This is Item number 4-3</td>
-          <td>This is Item number 5-3</td>
-        </tr>
+        </tr> -->
         
       </tbody>
     </table>
-    <div class="pagination">
+    <!-- <div class="pagination">
       <label class="disabled" for="table_radio_-1">&laquo; Previous</label>
       <label class="active" for="table_radio_0" id="table_pager_0">1</label>
       <label for="table_radio_1" id="table_pager_1">2</label>
@@ -67,6 +85,6 @@
     <input class="table-radio" type="radio" name="table_radio" id="table_radio_1"/>
     <div class="table-display">Showing 21 to 40
       of 95 items
-    </div>
+    </div> -->
     
   </div>
