@@ -26,7 +26,7 @@ class Admin{
              echo "found";
              if(password_verify($password, $userRow['password']))
              {
-                session_start();
+               //  session_start();
                 $_SESSION['user_session'] = $userRow['id'];
                 return true;
              }
