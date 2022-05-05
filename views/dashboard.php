@@ -29,15 +29,15 @@
           <th>No</th>
           <th>NOM</th>
           <th>EMAIL</th>
-          <th>PHONE</th>
           <th>ADDRESS</th>
-          <th>CITY</th>
+          <th>PHONE</th>
           <th>STATE</th>
           <th>COUNTRY</th>
-          <th>ZIPCODE</th>
+          <th>ZIP CODE</th>
           <th>QUANTITY</th>
+          <th>PAYMENT</th>
           <th>PAYE</th>
-          <th>FACTURE</th>
+          <th>INVOICE</th>
           <th>DATE</th>
         </tr>
       </thead>
