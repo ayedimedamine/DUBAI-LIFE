@@ -40,6 +40,16 @@ class Campaign{
       return $query->rowCount();
     }
 
-
+    public function getall(){
+      $admin = new Admin();
+          session_start();
+          if (! $admin->is_loggedin()) {
+            $admin->redirect('/admin/login');
+            exit();
+          }
+          $query = $this->db->prepare('SELECT * FROM campaigns');
+          $query->execute();
+          return $query->fetchAll();
+        }
 
 }
