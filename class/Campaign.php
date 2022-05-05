@@ -43,7 +43,7 @@ class Campaign{
       $admin = new Admin();
           session_start();
           if (! $admin->is_loggedin()) {
-            $admin->redirect('/admin/login');
+            $admin->redirect('/login');
             exit();
           }
           $query = $this->db->prepare('SELECT * FROM campaigns');
