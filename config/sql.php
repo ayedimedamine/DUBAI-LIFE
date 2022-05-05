@@ -21,7 +21,12 @@ require_once('class/Database.php');
     quantity INT(200) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     )";
-    
+    $admins = "CREATE TABLE IF NOT EXISTS admins (
+      id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+      email VARCHAR(50) NOT NULL,
+      password TEXT NOT NULL,
+      reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )";
     $campaigns = "CREATE TABLE IF NOT EXISTS campaigns (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(30) NOT NULL,
@@ -48,7 +53,7 @@ require_once('class/Database.php');
     $tempTable = "CREATE TABLE IF NOT EXISTS tempTickets (
       id VARCHAR(50) PRIMARY KEY,
       email VARCHAR(50) NOT NULL,
-      ticketcode varchar(99999) NOT NULL,
+      ticketcode TEXT NOT NULL,
       reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )";
     // use exec() because no results are returned
@@ -56,6 +61,7 @@ require_once('class/Database.php');
     $db->exec($campaigns);
     $db->exec($tickets);
     $db->exec($tempTable);
+    $db->exec($admins);
 
     echo "Tables created successfully";
 } catch(PDOException $e) {

@@ -27,8 +27,7 @@ function getCustomer($customer_id){
         $STRIPE_KEY
       );
       $client = $stripe->customers->retrieve(
-        $customer_id,
-        []
+        $customer_id
       );
       var_dump($client);
       return $client->metadata;
@@ -122,9 +121,18 @@ function updateCustomerData($customer_id, $metadata){
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
 
 
-
 $payload = @file_get_contents('php://input');
 $sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
+// $server_ips = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+$server_ips = $_SERVER['HTTP_X_FORWARDED_FOR'];
+echo $server_ips;
+// foreach($server_ips as $req_ip) {
+//   if (!in_array($req_ip, $STRIPE_SERVER_IPS)){
+//     http_response_code(403);
+//     exit();
+//   }
+// }
+
 $event = null;
 
 try {
@@ -133,14 +141,13 @@ try {
   );
 } catch(\UnexpectedValueException $e) {
   // Invalid payload
-  http_response_code(400);
+  http_response_code(403);
   exit();
 } catch(\Stripe\Exception\SignatureVerificationException $e) {
   // Invalid signature
-  http_response_code(400);
+  http_response_code(401);
   exit();
 }
-
 // Handle the event
 switch ($event->type) {
   case 'payment_intent.succeeded':
@@ -164,7 +171,7 @@ switch ($event->type) {
     $Campaigns =insertCampaign($data, $paymentIntent->status, $paymentIntent->amount_received, $paymentIntent->charges->data[0]->receipt_url);
     // sending email for confirmation containing tickets codes
     $recieverEmail = $data->email;
-    echo "we are here";
+    // echo "we are here";
     $subject = "The Dubai Life";
     // $email_template ="views/email.html";
     $email_template ="views/email-v1.html";
@@ -259,7 +266,8 @@ switch ($event->type) {
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     
     $mailer->sendMail($recieverEmail,$subject, $body);
-
+    http_response_code(200);
+    exit();
 
    
    // ... handle other event types
@@ -267,4 +275,4 @@ switch ($event->type) {
     echo 'Received unknown event type ' . $event->type;
 }
 
-http_response_code(200);
+http_response_code(400);

@@ -2,6 +2,8 @@
 
 // require 'Database.php';
 require_once('Database.php');
+// require_once('Client.php');
+// require_once('Admin.php');
 
 
 class Client{
@@ -35,8 +37,16 @@ class Client{
           ]);
         return $query->rowCount();
       }
+  // public function getall(){
+  //   $admin = new Admin();
+  //       session_start();
+  //       if (! $admin->is_loggedin()) {
+  //         $admin->redirect('/admin/login');
+  //         exit();
+  //       }
+  //       $query = $this->db->prepare('SELECT id, email, reg_date FROM tickets');
+  //       $query->execute();
+  //       return $query->fetchAll();
+  //     }
+  }
 
-
-
-
-}
