@@ -29,7 +29,7 @@ class Admin{
              {
                 session_start();
                 $_SESSION['user_session'] = $userRow['id'];
-                header("Location: /admin/dashbord",true, 303);
+                header("Location: /dashbord",true, 303);
                 return true;
              }
              else

@@ -116,7 +116,7 @@ body {
         <div class="text-center mt-4 name">
             Dubai Life 
         </div>
-        <form class="p-3 mt-3" action="/admin/login" method="post">
+        <form class="p-3 mt-3" action="/login" method="post">
             <div class="form-field d-flex align-items-center">
                 <span class="far fa-user"></span>
                 <input type="text" name="email" id="userName" placeholder="Username">

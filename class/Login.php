@@ -21,6 +21,6 @@ if(isset($_POST['btn-login']))
  }
  else
    {
-   $user->redirect('/admin/login');
+   $user->redirect('/login');
    } 
 }

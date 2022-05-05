@@ -17,9 +17,9 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('POST', '/checkout', 'class/checking.php');
     $r->addRoute('POST', '/webhook', 'config/webhook.php');
     
-    $r->addRoute('GET', '/admin/login', 'views/login.php');
-    $r->addRoute('POST', '/admin/login', 'class/Login.php');
-    $r->addRoute('GET', '/admin/dashbord', 'views/dashboard.php');
+    $r->addRoute('GET', '/login', 'views/login.php');
+    $r->addRoute('POST', '/login', 'class/Login.php');
+    $r->addRoute('GET', '/dashbord', 'views/dashboard.php');
     $r->addRoute('GET', '/test', 'views/dashbord-test.php');
     // $r->addRoute('GET', '/api', 'views/api.php');
 });
