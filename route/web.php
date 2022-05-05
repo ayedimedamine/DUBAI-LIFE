@@ -7,7 +7,6 @@ require "vendor/autoload.php";
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', 'views/home.php');
     $r->addRoute('GET', '/shop', 'views/shop.php');
-    // $r->addRoute('GET', '/', 'views/payment.php');
     $r->addRoute('GET', '/cancel', 'views/cancel.php');
     $r->addRoute('GET', '/success', 'views/successModal.php'); // SUCCESS MODAL 
     // $r->addRoute('GET', '/mail', 'views/email.html'); // EMAIL TEMPLATE VERSION 0
@@ -21,7 +20,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('POST', '/admin/login', 'class/Login.php');
     $r->addRoute('GET', '/admin/dashbord', 'views/dashboard.php');
     $r->addRoute('GET', '/admin', 'views/dashboard.php');
-    $r->addRoute('GET', '/admin/admin', 'views/dashboard.php');
+    $r->addRoute('GET', '/admin//admin', 'views/dashboard.php');
 
     // $r->addRoute('GET', '/test', 'views/dashbord-test.php');
 });
