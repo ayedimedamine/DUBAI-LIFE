@@ -13,6 +13,10 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/mail', 'views/email-v1.html'); // EMAIL TEMPLATE VERSION 0
     $r->addRoute('POST', '/checkout', 'class/checking.php');
     $r->addRoute('POST', '/webhook', 'config/webhook.php');
+    
+    $r->addRoute('GET', '/admin/login', 'views/login.php');
+    $r->addRoute('POST', '/admin/login', 'class/Login.php');
+    $r->addRoute('GET', '/admin/dashbord', 'views/dashboard.php');
     // $r->addRoute('GET', '/api', 'views/api.php');
 });
 
