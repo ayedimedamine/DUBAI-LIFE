@@ -27,7 +27,7 @@ class Admin{
              
              if(password_verify($password, $userRow['password']))
              {
-               //  session_start();
+                session_start();
                 $_SESSION['user_session'] = $userRow['id'];
                 header("Location: /admin/dashbord",true, 303);
                 return true;
