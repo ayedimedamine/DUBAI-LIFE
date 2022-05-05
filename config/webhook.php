@@ -174,7 +174,7 @@ switch ($event->type) {
     // echo "we are here";
     $subject = "The Dubai Life";
     // $email_template ="views/email.html";
-    $email_template ="views/email-v1.html";
+    $email_template ="views/email-v2.html";
     $body = file_get_contents($email_template);
     $body =str_replace('%email%', $data->email, $body);
     $body =str_replace('%phone%', $data->phone, $body);
@@ -190,74 +190,96 @@ switch ($event->type) {
     //   $i = $i +1;
     // };
     foreach ($ticketlist as $ticket) {
-    $html .= '<tr
-    style="
-      align-items: center;
-      display: flex;
-      margin-bottom: 20px;
-    "
-  >
+    $html .= '<tr>
     <td
-      valign="top"
       style="
-        line-height: 0;
-        padding: 0;
-        border: 1px solid #d19f46;
-        border-radius: 20px;
+        font-size: 0pt;
+        line-height: 0pt;
+        text-align: left;
       "
     >
       <img
         src="https://dubailife3.herokuapp.com/assets/images/v1.0.0/ticket.png"
+        style="width: 80px; height: auto"
+        width="80"
+        height="auto"
+        editable="true"
         border="0"
-        style="object-fit: cover"
-        align="left"
-        vspace="0"
-        hspace="0"
-        alt="ticket"
-        width="100px"
-        height="100px"
+        alt=""
       />
     </td>
-    <td width="20"></td>
     <td
-      valign="top"
-      style="line-height: 0; padding: 3px 0 0"
+      class="img"
+      width="10"
+      style="
+        font-size: 0pt;
+        line-height: 0pt;
+        text-align: left;
+      "
+    ></td>
+    <td
+      style="
+        font-size: 0pt;
+        line-height: 0pt;
+        text-align: left;
+        font-size: 16px;
+      "
     >
-      <p
-        border="0"
+      <div
+        class="day-date"
         style="
+          color: #2d2d31;
+          font-family: Arial, sans-serif, "HG";
+          font-size: 18px;
+          line-height: 34px;
+          text-align: left;
           font-weight: bold;
-          font-size: 20px;
-          color: #000000;
+          white-space: nowrap;
         "
-        align="left"
-        vspace="0"
-        hspace="0"
       >
-        Ticket N-' . $i . ':
-      </p>
+        <span>Ticket N-' . $i . ':</span>
+      </div>
     </td>
-    <td width="19"></td>
     <td
-      valign="top"
-      style="line-height: 0; padding: 3px 0 0"
+      class="img"
+      width="10"
+      style="
+        font-size: 0pt;
+        line-height: 0pt;
+        text-align: left;
+      "
+    ></td>
+    <td
+      style="
+        font-size: 0pt;
+        line-height: 0pt;
+        text-align: left;
+        font-size: 16px;
+      "
     >
-      <p
-        border="0"
+      <div
+        class="coupon"
         style="
+          color: #746e6e;
+          font-family: Arial, sans-serif, "HG";
+          font-size: 18px;
+          line-height: 20px;
+          text-align: left;
           font-weight: normal;
-          font-size: 20px;
-          color: #000000;
+          word-wrap: break-word;
+          border: 1px solid #d19f46;
+          background-color: #fff;
+          border-radius: 4px;
+          padding: 8px;
         "
-        align="left"
-        vspace="0"
-        hspace="0"
       >
-      ' . $ticket .'
-      </p>
+        <span>
+          ' . $ticket . '
+        </span>
+      </div>
     </td>
-    <td width="19"></td>
-  </tr>';
+  </tr>
+  <tr height="10"></tr>';
   $i = $i +1;
     };
    
