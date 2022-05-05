@@ -17,7 +17,7 @@ if(isset($_POST['btn-login']))
  if($user->login($umail,$upass))
  {
   $user->is_loggedin();
-  $user->redirect('/admin/dashbord');
+  // $user->redirect('/admin/dashbord');
  }
  else
    {

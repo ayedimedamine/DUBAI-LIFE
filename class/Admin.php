@@ -21,13 +21,15 @@ class Admin{
           $stmt = $this->db->prepare("SELECT * FROM admins WHERE  email=:email LIMIT 1");
           $stmt->execute(array(':email'=>$email));
           $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+          
           if($stmt->rowCount() > 0)
           {
-             echo "found";
+             
              if(password_verify($password, $userRow['password']))
              {
                //  session_start();
                 $_SESSION['user_session'] = $userRow['id'];
+                header("Location: /admin/dashbord",true, 303);
                 return true;
              }
              else
