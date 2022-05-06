@@ -253,8 +253,28 @@ switch ($event->type) {
 
    
    // ... handle other event types
+  case 'checkout.session.expired':
+    $session = $event->data->object;
+    $data = getCustomer($session->customer);
+
+    $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
+    $subject = "Checkout Expired";
+    $mailer->sendMail($recieverEmail,$subject, "<p> you missed your checkout :/ </p>");
+    http_response_code(200);
+    exit();
+
+  case 'payment_intent.canceled':
+    $paymentIntent = $event->data->object;
+    $data = getCustomer($paymentIntent->customer);
+    $recieverEmail = $data->email;
+
+    $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
+    $subject = "Payment Cancelled";
+    $mailer->sendMail($recieverEmail,$subject, "<p> hey why did you canceled your payment ??</p>");
+    http_response_code(200);
+    exit();
   default:
     echo 'Received unknown event type ' . $event->type;
 }
 
-http_response_code(400);
+http_response_code(200);
