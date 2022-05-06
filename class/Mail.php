@@ -23,7 +23,7 @@ use PHPMailer\PHPMailer\PHPMailer;
             try{
             $mail = new PHPMailer(true);
             $mail->CharSet = "UTF-8";
-            $mail->SMTPDebug = 1;                               // Enable verbose debug output
+            $mail->SMTPDebug = 0;                               // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host =  $this->SMTPhost;                            // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication

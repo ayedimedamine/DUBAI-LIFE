@@ -225,7 +225,7 @@ switch ($event->type) {
             font-family: Arial, sans-serif, HG;
             font-size: 18px;
             line-height: 20px;
-            text-align: left;
+            text-align: center;
             font-weight: normal;
             word-wrap: break-word;
             border: 1px solid #d19f46;
