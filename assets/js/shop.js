@@ -166,26 +166,26 @@ console.log(phone_format);
 console.log(error);
 
 submitBtn.addEventListener("click", (e) => {
-  if (form.name.value === "") {
+  if (form.Nom.value === "") {
     e.preventDefault();
-    error = "Vous devez entrer un nom.";
+    error = "Veuillez entrer votre nom et prénom";
   } else if (form.email.value === "" || !form.email.value.match(mail_format)) {
     e.preventDefault();
-    error = "Vous devez entrer un email valid.";
+    error = "Veuillez entrer un email valid.";
   } else if (form.tel.value === "" || !form.tel.value.match(phone_format)) {
-    error = "Vous devez entrer un numéro de téléphone valid.";
+    error = "Veuillez entrer un numéro de téléphone valid.";
     e.preventDefault();
   } else if (form.adress.value === "") {
     e.preventDefault();
-    error = "Vous devez entrer une addresse de Rue.";
+    error = "Veuillez entrer une addresse de Rue.";
   } else if (form.city.value === "") {
     e.preventDefault();
-    error = "Vous devez entrer votre cité.";
+    error = "Veuillez entrer votre cité.";
   } else if (form.zipCode.value === "") {
     e.preventDefault();
-    error = "Vous devez entrer votre code postal";
+    error = "Veuillez entrer votre code postal";
   } else if (form.quantity.value < 1) {
-    error = "Vous devez entrer un nombre de tickets supérieure à 0.";
+    error = "Veuillez entrer un nombre de tickets supérieure à 0.";
     e.preventDefault();
   }
   if (error !== "") {
