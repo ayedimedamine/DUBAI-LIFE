@@ -121,7 +121,7 @@ if (!empty($data)) {
       ]],
     
       'customer' => $client->id,
-      'expires_at' => 4,
+      'expires_at' => time() + (4 * 24 * 60 * 60),
       'mode' => 'payment',
       'success_url' => $DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
       'cancel_url' => 'https://www.the-dubai-life.com',
@@ -140,7 +140,7 @@ else {
         'tax_rates'=> [$TAX_RATE_ID],
       ]],
       'customer' => $client->id,
-      'expires_at' => 4,
+      'expires_at' => time() + (4 * 24 * 60 * 60),
       'mode' => 'payment',
       'success_url' => $DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
       'cancel_url' => 'https://www.the-dubai-life.com',
