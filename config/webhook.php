@@ -180,111 +180,104 @@ switch ($event->type) {
     $body =str_replace('%phone%', $data->phone, $body);
     $body =str_replace('%num_tickets%', count($ticketlist), $body);
     $body =str_replace('%link%', $paymentIntent->charges->data[0]->receipt_url, $body);
-    $html = '';
-    $i = 1;
-    // foreach ($ticketlist as $ticket) {
-    //   $html .= '<option value="ticketNum1" style="display: flex; justify-content: space-between;">
-    //             <span>Ticket N-' . $i . ':</span>
-    //             <span>' . $ticket .'</span>
-    //           </option>';
-    //   $i = $i +1;
-    // };
-    foreach ($ticketlist as $ticket) {
-    $html .= '<tr>
-    <td
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-      "
-    >
-      <img
-        src="https://dubailife3.herokuapp.com/assets/images/v1.0.0/ticket.png"
-        style="width: 80px; height: auto"
-        width="80"
-        height="auto"
-        editable="true"
-        border="0"
-        alt=""
-      />
-    </td>
-    <td
-      class="img"
-      width="10"
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-      "
-    ></td>
-    <td
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-        font-size: 16px;
-      "
-    >
-      <div
-        class="day-date"
-        style="
-          color: #2d2d31;
-          font-family: Arial, sans-serif, "HG";
-          font-size: 18px;
-          line-height: 34px;
-          text-align: left;
-          font-weight: bold;
-          white-space: nowrap;
-        "
-      >
-        <span>Ticket N-' . $i . ':</span>
-      </div>
-    </td>
-    <td
-      class="img"
-      width="10"
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-      "
-    ></td>
-    <td
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-        font-size: 16px;
-      "
-    >
-      <div
-        class="coupon"
-        style="
-          color: #746e6e;
-          font-family: Arial, sans-serif, "HG";
-          font-size: 18px;
-          line-height: 20px;
-          text-align: left;
-          font-weight: normal;
-          word-wrap: break-word;
-          border: 1px solid #d19f46;
-          background-color: #fff;
-          border-radius: 4px;
-          padding: 8px;
-        "
-      >
-        <span>
-          ' . $ticket . '
-        </span>
-      </div>
-    </td>
-  </tr>
-  <tr height="10"></tr>';
-  $i = $i +1;
-    };
+    // $html = '';
+    // $i = 1;
+  //   foreach ($ticketlist as $ticket) {
+  //   $html .= '<tr>
+  //   <td
+  //     style="
+  //       font-size: 0pt;
+  //       line-height: 0pt;
+  //       text-align: left;
+  //     "
+  //   >
+  //     <img
+  //       src="https://dubailife3.herokuapp.com/assets/images/v1.0.0/ticket.png"
+  //       style="width: 80px; height: auto"
+  //       width="80"
+  //       height="auto"
+  //       editable="true"
+  //       border="0"
+  //       alt=""
+  //     />
+  //   </td>
+  //   <td
+  //     class="img"
+  //     width="10"
+  //     style="
+  //       font-size: 0pt;
+  //       line-height: 0pt;
+  //       text-align: left;
+  //     "
+  //   ></td>
+  //   <td
+  //     style="
+  //       font-size: 0pt;
+  //       line-height: 0pt;
+  //       text-align: left;
+  //       font-size: 16px;
+  //     "
+  //   >
+  //     <div
+  //       class="day-date"
+  //       style="
+  //         color: #2d2d31;
+  //         font-family: Arial, sans-serif, "HG";
+  //         font-size: 18px;
+  //         line-height: 34px;
+  //         text-align: left;
+  //         font-weight: bold;
+  //         white-space: nowrap;
+  //       "
+  //     >
+  //       <span>Ticket N-' . $i . ':</span>
+  //     </div>
+  //   </td>
+  //   <td
+  //     class="img"
+  //     width="10"
+  //     style="
+  //       font-size: 0pt;
+  //       line-height: 0pt;
+  //       text-align: left;
+  //     "
+  //   ></td>
+  //   <td
+  //     style="
+  //       font-size: 0pt;
+  //       line-height: 0pt;
+  //       text-align: left;
+  //       font-size: 16px;
+  //     "
+  //   >
+  //     <div
+  //       class="coupon"
+  //       style="
+  //         color: #746e6e;
+  //         font-family: Arial, sans-serif, "HG";
+  //         font-size: 18px;
+  //         line-height: 20px;
+  //         text-align: left;
+  //         font-weight: normal;
+  //         word-wrap: break-word;
+  //         border: 1px solid #d19f46;
+  //         background-color: #fff;
+  //         border-radius: 4px;
+  //         padding: 8px;
+  //       "
+  //     >
+  //       <span>
+  //         ' . $ticket . '
+  //       </span>
+  //     </div>
+  //   </td>
+  // </tr>
+  // <tr height="10"></tr>';
+  // $i = $i +1;
+  //   };
    
   
-    $body =str_replace('%tickets%' , $html, $body);
+    // $body =str_replace('%tickets%' , $html, $body);
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     
     $mailer->sendMail($recieverEmail,$subject, $body);
