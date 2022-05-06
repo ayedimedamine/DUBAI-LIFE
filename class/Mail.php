@@ -61,7 +61,7 @@ use PHPMailer\PHPMailer\PHPMailer;
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = $this->SMTP_PORT;                                    // TCP port to connect to
 
-        $mail->setFrom('no-reply@the-dubai-life.com', $senderName);
+        $mail->setFrom($senderEmail, $senderName);
         $mail->addAddress($reciever);                     // Add a recipient
 
     
