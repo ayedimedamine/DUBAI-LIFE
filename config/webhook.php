@@ -156,12 +156,8 @@ switch ($event->type) {
     $data = getCustomer($paymentIntent->customer);
     $amount_received = $paymentIntent->amount_received;
     $status = $paymentIntent->status;
-    // $number_tickets = getTicketsNumber($data->quantity);
-    // $ticketlist = insertClients($number_tickets,$data);
-    // $ticketlist = generateTicketCodes($number_tickets);
     $ticketlist = getTickets($paymentIntent->customer);
     $metadata  = [
-      // 'tickets'=>json_encode($ticketlist),
       'facture'=>$paymentIntent->charges->data[0]->receipt_url,
       'status'=>$paymentIntent->status,
       'number_of_tickets'=>count($ticketlist)
@@ -171,9 +167,7 @@ switch ($event->type) {
     $Campaigns =insertCampaign($data, $paymentIntent->status, $paymentIntent->amount_received, $paymentIntent->charges->data[0]->receipt_url);
     // sending email for confirmation containing tickets codes
     $recieverEmail = $data->email;
-    // echo "we are here";
     $subject = "The Dubai Life";
-    // $email_template ="views/email.html";
     $email_template ="views/email-v2.html";
     $body = file_get_contents($email_template);
     $body =str_replace('%email%', $data->email, $body);
