@@ -48,5 +48,33 @@ use PHPMailer\PHPMailer\PHPMailer;
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
     }
+    public function sendMailMissedPayment($senderEmail, $reciever,$subject, $body, $senderName){
+        try{
+        $mail = new PHPMailer(true);
+        $mail->CharSet = "UTF-8";
+        $mail->SMTPDebug = 0;                               // Enable verbose debug output
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host =  $this->SMTPhost;                            // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = $this->senderEmail;                 // SMTP username
+        $mail->Password = $this->password;                           // SMTP password
+        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = $this->SMTP_PORT;                                    // TCP port to connect to
+
+        $mail->setFrom('no-reply@the-dubai-life.com', $senderName);
+        $mail->addAddress($reciever);                     // Add a recipient
+
+    
+        $mail->isHTML(true);                                  // Set email format to HTML
+
+        $mail->Subject = $subject;
+        $mail->Body    = $body;
+        $mail->AltBody = $body;
+        $mail->send();
+
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
 }
 ?>
