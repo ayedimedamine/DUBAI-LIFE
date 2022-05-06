@@ -156,12 +156,8 @@ switch ($event->type) {
     $data = getCustomer($paymentIntent->customer);
     $amount_received = $paymentIntent->amount_received;
     $status = $paymentIntent->status;
-    // $number_tickets = getTicketsNumber($data->quantity);
-    // $ticketlist = insertClients($number_tickets,$data);
-    // $ticketlist = generateTicketCodes($number_tickets);
     $ticketlist = getTickets($paymentIntent->customer);
     $metadata  = [
-      // 'tickets'=>json_encode($ticketlist),
       'facture'=>$paymentIntent->charges->data[0]->receipt_url,
       'status'=>$paymentIntent->status,
       'number_of_tickets'=>count($ticketlist)
@@ -171,9 +167,7 @@ switch ($event->type) {
     $Campaigns =insertCampaign($data, $paymentIntent->status, $paymentIntent->amount_received, $paymentIntent->charges->data[0]->receipt_url);
     // sending email for confirmation containing tickets codes
     $recieverEmail = $data->email;
-    // echo "we are here";
     $subject = "The Dubai Life";
-    // $email_template ="views/email.html";
     $email_template ="views/email-v2.html";
     $body = file_get_contents($email_template);
     $body =str_replace('%email%', $data->email, $body);
@@ -182,97 +176,63 @@ switch ($event->type) {
     $body =str_replace('%link%', $paymentIntent->charges->data[0]->receipt_url, $body);
     $html = '';
     $i = 1;
-    // foreach ($ticketlist as $ticket) {
-    //   $html .= '<option value="ticketNum1" style="display: flex; justify-content: space-between;">
-    //             <span>Ticket N-' . $i . ':</span>
-    //             <span>' . $ticket .'</span>
-    //           </option>';
-    //   $i = $i +1;
-    // };
     foreach ($ticketlist as $ticket) {
     $html .= '<tr>
-    <td
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-      "
-    >
-      <img
-        src="https://dubailife3.herokuapp.com/assets/images/v1.0.0/ticket.png"
-        style="width: 80px; height: auto"
-        width="80"
-        height="auto"
-        editable="true"
-        border="0"
-        alt=""
-      />
-    </td>
-    <td
-      class="img"
-      width="10"
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-      "
-    ></td>
-    <td
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-        font-size: 16px;
-      "
-    >
-      <div
-        class="day-date"
-        style="
-          color: #2d2d31;
-          font-family: Arial, sans-serif, "HG";
-          font-size: 18px;
-          line-height: 34px;
+    <td style="
+          font-size: 0pt;
+          line-height: 0pt;
           text-align: left;
-          font-weight: bold;
-          white-space: nowrap;
-        "
-      >
+        ">
+      <img src="https://dubailife-assets-stage.s3.eu-west-3.amazonaws.com/assets/images/v1.0.0/ticket.png"
+        width="80" height="auto" editable="true" border="0" alt="" />
+    </td>
+    <td class="img" width="10" style="
+          font-size: 0pt;
+          line-height: 0pt;
+          text-align: left;
+        "></td>
+    <td style="
+          font-size: 0pt;
+          line-height: 0pt;
+          text-align: left;
+          font-size: 16px;
+        ">
+      <div class="day-date" style="
+            color: #2d2d31;
+            font-family: Arial, sans-serif, HG;
+            font-size: 18px;
+            line-height: 34px;
+            text-align: left;
+            font-weight: bold;
+            white-space: nowrap;
+          ">
         <span>Ticket N-' . $i . ':</span>
       </div>
     </td>
-    <td
-      class="img"
-      width="10"
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-      "
-    ></td>
-    <td
-      style="
-        font-size: 0pt;
-        line-height: 0pt;
-        text-align: left;
-        font-size: 16px;
-      "
-    >
-      <div
-        class="coupon"
-        style="
-          color: #746e6e;
-          font-family: Arial, sans-serif, "HG";
-          font-size: 18px;
-          line-height: 20px;
+    <td class="img" width="10" style="
+          font-size: 0pt;
+          line-height: 0pt;
           text-align: left;
-          font-weight: normal;
-          word-wrap: break-word;
-          border: 1px solid #d19f46;
-          background-color: #fff;
-          border-radius: 4px;
-          padding: 8px;
-        "
-      >
+        "></td>
+    <td style="
+          font-size: 0pt;
+          line-height: 0pt;
+          text-align: left;
+          font-size: 16px;
+        ">
+      <div class="coupon" style="
+            color: #746e6e;
+            font-family: Arial, sans-serif, HG;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+            font-weight: normal;
+            word-wrap: break-word;
+            border: 1px solid #d19f46;
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 8px;
+          ">
         <span>
           ' . $ticket . '
         </span>
@@ -293,8 +253,28 @@ switch ($event->type) {
 
    
    // ... handle other event types
+  case 'checkout.session.expired':
+    $session = $event->data->object;
+    $data = getCustomer($session->customer);
+    $recieverEmail = $data->email;
+    $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
+    $subject = "Checkout Expired";
+    $mailer->sendMail($recieverEmail,$subject, "<p> you missed your checkout :/ </p>");
+    http_response_code(200);
+    exit();
+
+  case 'payment_intent.canceled':
+    $paymentIntent = $event->data->object;
+    $data = getCustomer($paymentIntent->customer);
+    $recieverEmail = $data->email;
+
+    $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
+    $subject = "Payment Cancelled";
+    $mailer->sendMail($recieverEmail,$subject, "<p> hey why did you canceled your payment ??</p>");
+    http_response_code(200);
+    exit();
   default:
     echo 'Received unknown event type ' . $event->type;
 }
 
-http_response_code(400);
+http_response_code(200);
