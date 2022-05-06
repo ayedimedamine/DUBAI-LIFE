@@ -26,6 +26,7 @@ $dotenv->load();
 
 // PROD : 
 $DOMAIN = 'https://www.the-new-life.fr';
+$PRICE_DISCOUNT= 2490;
 $TAX_RATE_ID = getenv('TAX_RATE_ID');
 $STRIPE_KEY = getenv('STRIPE_KEY');
 $STRIPE_SERVER_IPS = [

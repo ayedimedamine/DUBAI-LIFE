@@ -110,7 +110,7 @@ function getFreeTicketsNumberV2($quantity){
   else {return 0;}   
 }
 
-$data = generateDiscount($quantity , 2990 );
+$data = generateDiscount($quantity , $PRICE_DISCOUNT );
 if (!empty($data)) {
   $checkout_session = \Stripe\Checkout\Session::create([
       'line_items' => [[
