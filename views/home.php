@@ -15,7 +15,7 @@
           </h2>
           <span class="border-t border-white md:pt-0 md:border-none text-white font-bold text-lg ">THE NEW LIFE BY DUBAI LIFE</span>
           <p class="italic text-2xl md:text-3xl tracking-wide font-bold text-[#D19F46] my-4">
-            Gagnez un <span class="text-[#F3CC94]">appartement</span> sur <span class="text-[#F3CC94]">DUBAI</span>
+            Gagnez un <span class="text-[#F3CC94]">appartement</span> sur <span class="text-[#F3CC94]">Dubaï</span>
           </p>
           <a
             href="/shop"
@@ -30,14 +30,14 @@
 </div>
  <!-- Main -->
 <div>
-    <div class="grid grid-cols-12 gap-2 md:gap-4 mt-8 items-start justify-center">
-        <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-4"></div>
-        <div class="mx-auto text-center text-lg col-span-10 md:col-span-4">
+    <div class="grid grid-cols-12 gap-2 md:gap-2 mt-8 items-start justify-center">
+        <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
+        <div class="mx-auto text-center text-lg col-span-10 md:col-span-6 ">
         <h1><span class="font-bold">The Dubaï Life</span> lance <span class="font-bold">le plus grand jeu concours</span></h1>
-        <p>pour démarrer ta New Life à Dubaï !</p>
-        <p>Pour participer jusqu'à <span class="font-bold text-[#D19F46]">FIN JUIN:</span></p>
+        <p>Participer jusqu'à <span class="font-bold text-[#D19F46]">DÉBUT JUILLET</span> en achetant vos tickets</p>
+        <p>pour démarrer ta New Life!</p>
         </div>
-        <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-4"></div>
+        <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
     </div>
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-20">
         <div class="grid grid-rows md:grid-cols-2 gap-4 lg:gap-24 items-center md:items-start justify-center md:justify-between lg:flex-row">
@@ -57,24 +57,22 @@
                 1 TICKET
                 </p>
                 <p class=" px-3 font-sans text-xl md:text-3xl font-bold tracking-wider text-black">
-                Pour être tiré au sort
+                pour être tiré au sort
                 </p>
             </div>
             <div class="border border-l-0 border-black flex flex-col items-center justify-center mt-16">
                 <div class="w-full pr-8 -mt-10" >
-                <div class="bg-black w-full h-20 flex items-center justify-center px-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-[#D19F46] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                    </svg>
-                    <span class="text-white text-md md:text-xl font-bold">Maximisez vos chances de gagnez</span>
+                <div class="bg-black w-full h-20 flex flex-col items-start justify-center px-4 py-4">
+                    <p class="text-[#D19F46] text-md md:text-lg font-bold">Un point d'information</p>
+                    <p class="text-white text-md md:text-lg font-bold">Maximisez vos chances de gagnez</p>
                 </div>
                 </div>
                 <div class="py-4 italic">
                 <p class="px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">4</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">5</span> TICKETS
+                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">04</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">05</span> TICKETS
                 </p>
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">8</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">11</span> TICKETS
+                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">08</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">11</span> TICKETS
                 </p>
                 <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
                     <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">12</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">18</span> TICKETS
@@ -107,7 +105,7 @@
         </div>
         <div class="relative w-full cursor-pointer bg-black py-12">
              <p class="text-center text-white tetx-lg md:text-2xl font-semibold my-2 border-t border-white mx-4 py-4">
-                <span class='font-medium opacity-95'>Gagnez :</span> Visa <span class='font-medium opacity-95'>+</span> Billets <span class='font-medium opacity-95'>+</span> Ouverture De Société <span class='font-medium opacity-95'>+</span> Appartement Avec Piscine Privée à Dubaï <span class='font-medium opacity-95'>Et</span> Pleins D'autres Cadeux
+                <span class='font-medium opacity-95'>Gagnez :</span> Visa + Billets + Ouverture de société + Appartement dans une résidence avec piscine privée + Pleins d'autres cadeaux
             </p>
              <p class="w-32 mx-auto mb-4 border-t border-white"><p>
             <img class="absolute right-0 w-28 md:w-56 object-cover h-auto -mr-2 md:-mr-4 mt-0" src="../assets/images/v1.0.0/gift.png" alt="The Dubai Life" />
