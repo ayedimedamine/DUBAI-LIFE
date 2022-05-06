@@ -183,7 +183,7 @@ switch ($event->type) {
           line-height: 0pt;
           text-align: left;
         ">
-      <img src="https://dubailife3.herokuapp.com/assets/images/v1.0.0/ticket.png"
+      <img src="https://dubailife-assets-stage.s3.eu-west-3.amazonaws.com/assets/images/v1.0.0/ticket.png"
         width="80" height="auto" editable="true" border="0" alt="" />
     </td>
     <td class="img" width="10" style="
