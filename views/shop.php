@@ -69,6 +69,7 @@
                     <input 
                     placeholder="06 12 34 56 78"
                     country="france"
+                    required=""
                     type="tel" 
                     id="tel"
                     name="tel"
