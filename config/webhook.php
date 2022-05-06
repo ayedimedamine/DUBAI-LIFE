@@ -252,7 +252,6 @@ switch ($event->type) {
     exit();
 
    
-   // ... handle other event types
   case 'checkout.session.expired':
     $session = $event->data->object;
     $data = getCustomer($session->customer);
@@ -278,5 +277,4 @@ switch ($event->type) {
     http_response_code(200);
     exit();
 }
-
 http_response_code(500);
