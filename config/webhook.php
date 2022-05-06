@@ -277,4 +277,4 @@ switch ($event->type) {
     echo 'Received unknown event type ' . $event->type;
 }
 
-http_response_code(200);
+http_response_code(500);
