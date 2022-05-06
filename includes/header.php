@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <!-- Alpine.js -->
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <title>Immobilier - The Dubai Life</title>
+    <title>The New Life by The Dubai Life</title>
   </head>
    <!-- Customize width for the International phone Number field-->
    <style>
