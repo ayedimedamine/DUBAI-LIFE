@@ -2,7 +2,7 @@
   <!-- Desktop Navbar -->
   <div class="relative w-full hidden md:flex items-center md:justify-between px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <div>
-      <a href="/" aria-label="The_dubai_life" title="The_dubai_life" class="inline-flex items-center">
+      <a href="https://the-dubai-life.com" aria-label="The_dubai_life" title="The_dubai_life" class="inline-flex items-center">
         <img class='h-16'src='../assets/images/v1.0.0/The_dubai_life_logo.png' alt='The dubai life' />
       </a>
     </div>
