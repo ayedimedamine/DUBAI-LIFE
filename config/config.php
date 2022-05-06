@@ -24,7 +24,7 @@ $dotenv->load();
 
 
 
-PROD : 
+// PROD : 
 $DOMAIN = 'https://www.the-new-life.fr';
 $TAX_RATE_ID = getenv('TAX_RATE_ID');
 $STRIPE_KEY = getenv('STRIPE_KEY');
