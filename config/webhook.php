@@ -256,7 +256,7 @@ switch ($event->type) {
   case 'checkout.session.expired':
     $session = $event->data->object;
     $data = getCustomer($session->customer);
-
+    $recieverEmail = $data->email;
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     $subject = "Checkout Expired";
     $mailer->sendMail($recieverEmail,$subject, "<p> you missed your checkout :/ </p>");
