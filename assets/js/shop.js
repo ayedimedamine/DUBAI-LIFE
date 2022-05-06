@@ -172,7 +172,7 @@ submitBtn.addEventListener("click", (e) => {
   } else if (form.email.value === "" || !form.email.value.match(mail_format)) {
     e.preventDefault();
     error = "Vous devez entrer un email valid.";
-  } else if (form.phone.value === "" || !form.phone.value.match(phone_format)) {
+  } else if (form.tel.value === "" || !form.phone.value.match(phone_format)) {
     error = "Vous devez entrer un numéro de téléphone valid.";
     e.preventDefault();
   } else if (form.street.value === "") {
