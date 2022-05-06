@@ -259,7 +259,7 @@ switch ($event->type) {
     $recieverEmail = $data->email;
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     $subject = "Checkout Expired";
-    $mailer->sendMailMissedPayment("test@email.com", $recieverEmail,$subject, "<p> you missed your checkout :/ </p>", "Dubai-Promotion");
+    $mailer->sendMailMissedPayment("promotion@the-dubai-life.com", $recieverEmail,$subject, "<p> you missed your checkout :/ </p>", "The Dubai Dream");
     http_response_code(200);
     exit();
 
@@ -270,7 +270,7 @@ switch ($event->type) {
 
     $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
     $subject = "Payment Cancelled";
-    $mailer->sendMailMissedPayment("test@email.com", $recieverEmail,$subject, "<p> hey why did you canceled your payment ??</p>", "Dubai-Promotion");
+    $mailer->sendMailMissedPayment("promotion@the-dubai-life.com", $recieverEmail,$subject, "<p> hey why did you canceled your payment ??</p>", "The Dubai Dream");
     http_response_code(200);
     exit();
   default:
