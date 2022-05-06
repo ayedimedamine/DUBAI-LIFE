@@ -79,8 +79,9 @@
 
                     <input
                     placeholder="Adresse de la Rue"
-                    name=adress
-                    required
+                    name="adress"
+                    id="adress"
+                    required=""
                     type="text"
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
