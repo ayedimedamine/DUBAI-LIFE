@@ -15,7 +15,7 @@
           </h2>
           <span class="border-t border-white md:pt-0 md:border-none text-white font-bold text-lg ">THE NEW LIFE BY DUBAI LIFE</span>
           <p class="italic text-2xl md:text-3xl tracking-wide font-bold text-[#D19F46] my-4">
-            Gagnez un <span class="text-[#F3CC94]">appartement</span> sur <span class="text-[#F3CC94]">DUBAI</span>
+            Gagnez un <span class="text-[#F3CC94]">appartement</span> sur <span class="text-[#F3CC94]">Dubaï</span>
           </p>
         </div>
       </div>
@@ -391,7 +391,7 @@
                 <!-- Order price -->
                 <div class="mt-6 ml-2 grid grid-cols-5 h-12 items-center justify-start border-2 border-[#D19F46] rounded-full">
                     <p class="col-span-2">
-                    <span class="font-bold text-lg md:text-2xl tracking-wider text-white bg-[#D19F46] rounded-full px-8 py-[14px] md:py-[10px] -ml-2">Prix</span>
+                    <span class="font-bold text-lg md:text-2xl tracking-wider text-white bg-[#D19F46] rounded-full px-8 py-[14px] md:py-[10px] -ml-2">PRIX</span>
                     </p>
                     <div class="flex items-center justify-center col-span-3 text-center font-bold text-2xl">
                     <input
