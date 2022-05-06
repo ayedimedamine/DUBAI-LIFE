@@ -275,6 +275,8 @@ switch ($event->type) {
     exit();
   default:
     echo 'Received unknown event type ' . $event->type;
+    http_response_code(200);
+    exit();
 }
 
 http_response_code(500);
