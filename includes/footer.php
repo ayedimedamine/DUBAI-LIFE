@@ -31,17 +31,6 @@
           </ul>
         </div>
         <div>
-          <p class="font-medium tracking-wide text-[#E3E3E3]">Immobilier</p>
-          <ul class="mt-2 space-y-2">
-            <li>
-              <a href="https://the-dubai-life.com/nos-biens-immobiliers/" target="_blank" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">Biens Immobiliers</a>
-            </li>
-            <li>
-              <a href="https://the-dubai-life.com/damac-lagoons/" target="_blank" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">Damac Lagoons</a>
-            </li>
-          </ul>
-        </div>
-        <div>
           <p class="font-medium tracking-wide text-[#E3E3E3]">Suivez-nous</p>
           <ul class="mt-2 space-y-2">
             <li class="flex items-center text-white">
