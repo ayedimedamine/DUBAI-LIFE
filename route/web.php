@@ -11,7 +11,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/success', 'views/successModal.php'); // SUCCESS MODAL 
     // $r->addRoute('GET', '/mail', 'views/email-v1.html'); // EMAIL TEMPLATE VERSION 1
     // $r->addRoute('GET', '/mail2', 'views/email-v2.html'); // EMAIL TEMPLATE VERSION 2
-    $r->addRoute('GET', '/mail', 'views/email-tdl.html'); 
+    // $r->addRoute('GET', '/mail', 'views/email-tdl.html'); 
 
     $r->addRoute('POST', '/checkout', 'class/checking.php');
     $r->addRoute('POST', '/webhook', 'config/webhook.php');
@@ -22,6 +22,9 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/admin/customers', 'views/customers.php');
     $r->addRoute('GET', '/admin', 'views/dashboard.php');
     $r->addRoute('GET', '/admin//admin', 'views/dashboard.php');
+
+
+    $r->addRoute('GET', '/terms', 'views/terms.php');
 
 });
 
