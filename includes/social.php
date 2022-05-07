@@ -43,6 +43,13 @@
 				<span class="ml-2"> messenger</span>
       </div>
 		</a>
+		</a>
+		<a class="text-white text-xl" target="_blank" >
+		<div class="rounded-md flex items-center py-2 px-6 bg-[#25d366] hover:shadow-md transition-all 	st-custom-button"style=" color: white; background-color:blue; " data-network="sms" data-url="J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours @the-new-life,fr https://gfycat.com/difficultpoisedamericanpainthorse">
+        <i class="fab fa-telegram"></i>
+				<span class="ml-2"> sms</span>
+      </div>
+		</a>
 		<!-- <a>
 		<script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-share-url="https://gfycat.com/difficultpoisedamericanpainthorse" data-text="notext"></script>
 		</a> -->
