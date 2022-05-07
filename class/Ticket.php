@@ -4,7 +4,7 @@
 require 'vendor/autoload.php';
 require_once('Admin.php');
 require_once('Database.php');
-
+require_once('RandomStringGenerator.php');
 
 
 
@@ -21,13 +21,20 @@ class Ticket{
     }
 
     
+
+
+    // public function ticketcodegenrator()
+    //   {
+    //     // return uniqid('dubai-');
+    //     $factory = new RandomLib\Factory;
+    //     $generator = $factory->getMediumStrengthGenerator();
+    //     $ticketcode = $generator->generateString(27, 'abcdefghijklmnopqrstuvwxyz123456789AZERTYUIOPQSDFGHJKLMWXCVBN');
+    //     return $ticketcode;
+    //   }
     public function ticketcodegenrator()
       {
-        // return uniqid('dubai-');
-        $factory = new RandomLib\Factory;
-        $generator = $factory->getMediumStrengthGenerator();
-        $ticketcode = $generator->generateString(27, 'abcdefghijklmnopqrstuvwxyz123456789AZERTYUIOPQSDFGHJKLMWXCVBN');
-        return $ticketcode;
+        $generator = new RandomStringGenerator;
+        return 'DUBAI-'. $generator->generate(24);
       }
       
       

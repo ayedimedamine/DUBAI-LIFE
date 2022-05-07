@@ -7,3 +7,8 @@
 // require 'class/Mail.php';
 // $mailer = new Mail($SMTP_USER,$SMTP_PASSWORD,$SMTP_HOST,$SMTP_PORT);
 // $mailer->sendMailMissedPayment('senderemail','mohamedamine.aydi@numerys.io',"dubai life","<p>hey there</p>",'sender name');
+require_once('class/RandomStringGenerator.php');
+
+$generator = new RandomStringGenerator;
+
+echo 'DUBAI-'. $generator->generate(24);
