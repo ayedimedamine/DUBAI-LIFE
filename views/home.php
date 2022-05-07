@@ -241,7 +241,7 @@
             <span class="font-bold">SUIVEZ LES EVENEMENTS</span> SUR NOTRE COMPTE
             </p>
             <p class="text-center text-lg font-bold">
-            INSTGRAM ET SNAPSHAT 
+            INSTAGRAM ET SNAPCHAT 
             </p>
             <div class="flex justify-center space-x-2">
             <a href="https://www.instagram.com/the.dubai.life/" target="_blank">
