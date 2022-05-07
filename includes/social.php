@@ -9,7 +9,7 @@
 
              <!-- Twitter  -->
 		<a class="text-white text-xl" 
-            href="https://twitter.com/intent/tweet?text=J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours ! https://www.the-new-life.fr&url=https://gfycat.com/difficultpoisedamericanpainthorse"
+            href="https://twitter.com/intent/tweet?text=J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours !  https://www.the-new-life.fr @thedubalife1&url=https://gfycat.com/difficultpoisedamericanpainthorse"
           data-action="share/twitter/share"
           target="_blank">
 		<div class="rounded-md flex items-center py-2 px-6 bg-[#1da1f2] hover:shadow-md transition-all">
@@ -29,7 +29,7 @@
         </a>
 		<a 
           class="text-white text-xl"
-          href="https://t.me/share?url=https%3A%2F%2Fgfycat.com%2Fdifficultpoisedamericanpainthorse"
+          href="https://t.me/share?&text=J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours ! https://www.the-new-life.fr&url=https://media.giphy.com/media/BUzI1toK5LhNOidELL/giphy.gif"
           data-action="share/telegram/share"
           target="_blank" >
 			<div class="rounded-md flex items-center py-2 px-6 bg-[#25d366] hover:shadow-md transition-all" style=" color: white; background-color:#229ED9; ">
@@ -37,7 +37,12 @@
 				<span class="ml-2"> Telegram</span>
             </div>
         </a>
-		
+		<a class="text-white text-xl" target="_blank" >
+		<div class="rounded-md flex items-center py-2 px-6 bg-[#25d366] hover:shadow-md transition-all 	st-custom-button"style=" color: white; background-color:blue; " data-network="messenger" data-url="https://media.giphy.com/media/BUzI1toK5LhNOidELL/giphy.gif">
+        <i class="fab fa-telegram"></i>
+				<span class="ml-2"> messenger</span>
+      </div>
+		</a>
 		<!-- <a>
 		<script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-share-url="https://gfycat.com/difficultpoisedamericanpainthorse" data-text="notext"></script>
 		</a> -->
