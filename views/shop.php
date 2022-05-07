@@ -9,7 +9,7 @@
       <div class="bg-black">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
         <div class="relative max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12">
-          <img class='h-12 object-cover md:hidden mx-auto my-4' src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' />
+          <!-- <img class='h-12 object-cover md:hidden mx-auto my-4' src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' /> -->
           <h2 class="max-w-lg mb-2 md:mt-0 text-5xl font-bold text-white sm:text-6xl mx-auto tracking-wider">
             Jeu Concours
           </h2>
@@ -52,7 +52,7 @@
             <div class='flex flex-col'>
                 <div class="space-y-3">
                     <input
-                    placeholder="Prénom & nom"
+                    placeholder="Prénom Nom"
                     name="Nom"
                     required=""
                     type="text"
@@ -67,7 +67,7 @@
                     />
                     <!-- International Phone Number  -->
                     <input 
-                    placeholder="06 12 34 56 78"
+                    placeholder="Portable"
                     country="france"
                     required=""
                     type="tel" 
@@ -78,7 +78,7 @@
                     />
 
                     <input
-                    placeholder="Adresse de la Rue"
+                    placeholder="Rue"
                     name="adress"
                     id="adress"
                     required=""
@@ -86,20 +86,20 @@
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
-                    placeholder="Cité"
+                    placeholder="Ville"
                     name="city"
                     required
                     type="text"
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
-                    placeholder="Etat / Provenance"
+                    placeholder="Département"
                     type="text"
                     name="state"
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
-                    placeholder="Code Postale"
+                    placeholder="Code Postal"
                     required
                     name="zipCode"
                     type="text"

@@ -9,7 +9,7 @@
       <div class="bg-black">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
         <div class="relative max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12">
-          <img class='h-12 object-cover md:hidden mx-auto my-4' src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' />
+          <!-- <img class='h-12 object-cover md:hidden mx-auto my-4' src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' /> -->
           <h2 class="max-w-lg mb-2 md:mt-0 text-5xl font-bold text-white sm:text-6xl mx-auto tracking-wider">
             Jeu Concours
           </h2>
@@ -35,7 +35,7 @@
         <div class="mx-auto text-center text-lg col-span-10 md:col-span-6 ">
         <h1><span class="font-bold">The Dubaï Life</span> lance <span class="font-bold">le plus grand jeu concours</span></h1>
         <p>Participer jusqu'à <span class="font-bold text-[#D19F46]">DÉBUT JUILLET</span> en achetant vos tickets</p>
-        <p>pour démarrer ta New Life!</p>
+        <p>pour démarrer Votre New Life!</p>
         </div>
         <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
     </div>
@@ -114,7 +114,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="grid grid-cols-12 gap-2">
+                    <!-- <div class="grid grid-cols-12 gap-2">
                         <div class="flex items-center justify-start col-span-2">
                             <span class="text-[#D19F46] text-base sm:text-lg md:text-4xl font-black">08</span>
                         </div>
@@ -136,7 +136,7 @@
                                TICKETS
                             </span>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="grid grid-cols-12 gap-2">
                         <div class="flex items-center justify-start col-span-2">
                             <span class="text-[#D19F46] text-base sm:text-lg md:text-4xl font-black">12</span>
@@ -213,7 +213,7 @@
                 <span class="font-bold">SUIVEZ LES EVENEMENTS</span> SUR NOTRE COMPTE
                 </p>
                 <p class="text-center text-lg font-bold">
-                INSTGRAM ET SNAPSHAT 
+                INSTAGRAM ET SNAPCHAT 
                 </p>
                 <div class="flex justify-center space-x-2">
                 <a href="https://www.instagram.com/the.dubai.life/" target="_blank">
@@ -241,7 +241,7 @@
             <span class="font-bold">SUIVEZ LES EVENEMENTS</span> SUR NOTRE COMPTE
             </p>
             <p class="text-center text-lg font-bold">
-            INSTGRAM ET SNAPSHAT 
+            INSTAGRAM ET SNAPCHAT 
             </p>
             <div class="flex justify-center space-x-2">
             <a href="https://www.instagram.com/the.dubai.life/" target="_blank">
