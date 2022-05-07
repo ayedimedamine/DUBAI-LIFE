@@ -2,7 +2,7 @@
 	<div class="flex justify-center gap-x-5 mt-6 mb-8">   
 
 	 <!-- FACEBOOK  -->
-		<a class="text-white text-xl" href="https://www.facebook.com/sharer/sharer.php?u=https://gfycat.com/difficultpoisedamericanpainthorse&quote=hello there&text=deccription"  target="_blank">
+		<a class="text-white text-xl" href="https://www.facebook.com/sharer/sharer.php?u=https://gfycat.com/difficultpoisedamericanpainthorse&quote=J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours ! https://www.the-new-life.fr"  target="_blank">
 		<div class="rounded-md py-2 flex px-6 items-center bg-[#1877f2] hover:shadow-md transition-all">
 			<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="w-5 h-5 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
 			<span> Facebook</span></div></a>
@@ -37,8 +37,12 @@
 				<span class="ml-2"> Telegram</span>
             </div>
         </a>
+		
 		<!-- <a>
 		<script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-share-url="https://gfycat.com/difficultpoisedamericanpainthorse" data-text="notext"></script>
 		</a> -->
+		<br />
+		<!-- <div class="sharethis-inline-share-buttons" data-url="https://gfycat.com/difficultpoisedamericanpainthorse" data-message="test"></div> -->
 	</div>
+	
 </div>
