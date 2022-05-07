@@ -1924,6 +1924,14 @@ select {
   letter-spacing: 0em;
 }
 
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
 .text-\[\#E3E3E3\] {
   --tw-text-opacity: 1;
   color: rgb(227 227 227 / var(--tw-text-opacity));
@@ -2240,8 +2248,21 @@ select {
     line-height: 1.75rem;
   }
 
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:font-bold {
+    font-weight: 700;
+  }
+
   .sm\:tracking-wide {
     letter-spacing: 0.025em;
+  }
+
+  .sm\:tracking-normal {
+    letter-spacing: 0em;
   }
 }
 
