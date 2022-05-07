@@ -45,7 +45,7 @@
 		</a> -->
 		</a>
 		<a class="text-white text-xl" target="_blank" >
-		<div class="rounded-md flex items-center py-2 px-6 bg-[#25d366] hover:shadow-md transition-all 	st-custom-button"style=" color: white; background-color:147efb; " data-network="sms" data-url="J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours @the-new-life,fr https://gfycat.com/difficultpoisedamericanpainthorse">
+		<div class="rounded-md flex items-center py-2 px-6 bg-[#25d366] hover:shadow-md transition-all 	st-custom-button" style="color: white; background-color:147efb;" data-network="sms" data-url="J'ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours https://gfycat.com/difficultpoisedamericanpainthorse">
         <i class="far fa-comment"></i>
 				<span class="ml-2"> Messages</span>
       </div>
