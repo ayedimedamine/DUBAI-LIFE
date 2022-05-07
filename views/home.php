@@ -53,7 +53,7 @@
                 <p class=" px-3 font-sans text-5xl font-bold tracking-wider text-[#D19F46] uppercase">
                 =
                 </p>
-                <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black uppercase">
+                <p class=" px-3 text-lg font-medium tracking-wider text-black uppercase">
                 1 TICKET
                 </p>
                 <p class=" px-3 font-sans text-xl md:text-3xl font-bold tracking-wider text-black">
@@ -68,21 +68,121 @@
                 </div>
                 </div>
                 <div class="py-4 italic">
-                <p class="px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">04</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">05</span> TICKETS
-                </p>
-                <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">08</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">11</span> TICKETS
-                </p>
-                <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">12</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">18</span> TICKETS
-                </p>
-                <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">16</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">25</span> TICKETS
-                </p>
-                <p class=" px-3 font-sans text-lg font-semibold tracking-wider text-black">
-                    <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">20</span>E-BOOKS = <span class="text-[#D19F46] text-xl md:text-4xl font-black mx-2">32</span> TICKETS
-                </p>
+                    <div class="grid grid-cols-12 gap-2">
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">04</span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-3">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                E-BOOKS
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-center col-span-2">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                =
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">05</span>
+                        </div>
+                        <div class="col-span-3 flex items-center justify-start">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                               TICKETS
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">08</span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-3">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                E-BOOKS
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-center col-span-2">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                =
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">11</span>
+                        </div>
+                        <div class="col-span-3 flex items-center justify-start">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                               TICKETS
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">12</span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-3">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                E-BOOKS
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-center col-span-2">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                =
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">18</span>
+                        </div>
+                        <div class="col-span-3 flex items-center justify-start">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                               TICKETS
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">16</span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-3">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                E-BOOKS
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-center col-span-2">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                =
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">25</span>
+                        </div>
+                        <div class="col-span-3 flex items-center justify-start">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                               TICKETS
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2">
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">20</span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-3">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                E-BOOKS
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-center col-span-2">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                                =
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-start col-span-2">
+                            <span class="text-[#D19F46] text-xl md:text-4xl font-black">32</span>
+                        </div>
+                        <div class="col-span-3 flex items-center justify-start">
+                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                               TICKETS
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="mt-6 max-w-xl px-8 hidden md:block">
