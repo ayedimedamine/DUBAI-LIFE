@@ -23,6 +23,9 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/admin', 'views/dashboard.php');
     $r->addRoute('GET', '/admin//admin', 'views/dashboard.php');
 
+
+    $r->addRoute('GET', '/terms', 'views/terms.php');
+
 });
 
 // Fetch method and URI from somewhere
