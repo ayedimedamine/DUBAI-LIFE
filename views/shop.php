@@ -9,7 +9,7 @@
       <div class="bg-black">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
         <div class="relative max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12">
-          <img class='h-12 object-cover md:hidden mx-auto my-4' src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' />
+          <!-- <img class='h-12 object-cover md:hidden mx-auto my-4' src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' /> -->
           <h2 class="max-w-lg mb-2 md:mt-0 text-5xl font-bold text-white sm:text-6xl mx-auto tracking-wider">
             Jeu Concours
           </h2>
