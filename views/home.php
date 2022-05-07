@@ -19,7 +19,7 @@
           </p>
           <a
             href="/shop"
-            class="inline-flex items-center justify-center h-10 px-6 font-bold text-lg tracking-wider text-white bg-[#040405] rounded shadow-md transition duration-300 hover:bg-[#D1A046]"
+            class="inline-flex items-center justify-center h-10 px-6 font-bold text-lg tracking-wider text-white bg-[#D19F46] rounded shadow-md transition duration-300 hover:bg-black"
           >
            PARTICIPEZ
           </a>
