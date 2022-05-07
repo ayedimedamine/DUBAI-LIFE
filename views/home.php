@@ -256,7 +256,7 @@
     </div>
 </div>
 <!-- Promotion Video section -->
-<div class="hidden sm:block mx-auto mb-16  rounded-lg max-w-md h-full w-full relative">
+<div class="hidden sm:block mx-auto mb-0 rounded-lg max-w-md h-full w-full relative -top-24">
     <header class="hidden sm:flex justify-center items-center">
       <div class="header"> 
         <div class="headerRight">
@@ -275,7 +275,7 @@
     </video>
 </div>
     <!-- Call To Action-->
-<div class="bg-white mt-32">
+<div class="bg-white mt-16 sm:mt-8">
     <div class="relative mx-auto lg:mx-16">
         <img src='../assets/images/v1.0.0/cta.jpg' class="absolute inset-0 object-cover w-full h-full bg-black" alt="The Dubai Life" />
         <div class="bg-black">

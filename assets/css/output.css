@@ -1027,6 +1027,10 @@ select {
   right: 0px;
 }
 
+.-top-24 {
+  top: -6rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -2349,6 +2353,10 @@ select {
 
   .sm\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .sm\:mt-8 {
+    margin-top: 2rem;
   }
 
   .sm\:block {
