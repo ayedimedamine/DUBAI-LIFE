@@ -2,7 +2,7 @@
 
 
 require 'vendor/autoload.php';
-// require 'Database.php';
+require_once('Admin.php');
 require_once('Database.php');
 
 
@@ -26,7 +26,7 @@ class Ticket{
         // return uniqid('dubai-');
         $factory = new RandomLib\Factory;
         $generator = $factory->getMediumStrengthGenerator();
-        $ticketcode = $generator->generateString(27, 'abcdefghijklmnopqrstuvwxyz234567');
+        $ticketcode = $generator->generateString(27, 'abcdefghijklmnopqrstuvwxyz123456789AZERTYUIOPQSDFGHJKLMWXCVBN');
         return $ticketcode;
       }
       
@@ -42,7 +42,17 @@ class Ticket{
           ]);
         return $query->rowCount();
       }
-
+      public function getall(){
+        $admin = new Admin();
+            session_start();
+            if (! $admin->is_loggedin()) {
+              $admin->redirect('/login');
+              exit();
+            }
+            $query = $this->db->prepare('SELECT * FROM tickets');
+            $query->execute();
+            return $query->fetchAll();
+          }
 
       // public function addClient($data,$ticketcode)
       // {
