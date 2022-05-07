@@ -39,7 +39,7 @@ include 'includes/navbar.php';
         <div class="notifMsg">
           <?php for ($i = 0; $i < count($tickets); $i++) {  
             echo "<div class='notifLine'>
-              <img src='../assets/images/ticket.png' alt='ticket'/>
+              <img src='../assets/images/ticket.jpg' alt='ticket'/>
               <p>Ticket N° <span>$i</span> : </p>
               <p class='ticketnumber'>$tickets[$i]</p>
             </div>";
