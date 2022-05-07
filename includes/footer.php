@@ -3,11 +3,8 @@
     <div class="grid row-gap-10 mb-8 lg:grid-cols-6">
       <div class="grid grid-cols-2 gap-10 md:gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
         <div>
-          <p class="font-medium tracking-wide text-[#E3E3E3]">Services</p>
-          <ul class="mt-2 space-y-2">
-            <li>
-              <a href="https://the-dubai-life.com/immobilier/" target="_blank" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">Immobilier</a>
-            </li>
+          <p class="font-bold tracking-wide text-[#E3E3E3]">Services</p>
+          <ul class="mt-6 space-y-2">
             <li>
               <a href="https://the-dubai-life.com/expatriation/" target="_blank" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">S'installer à Dubai</a>
             </li>
@@ -17,8 +14,8 @@
           </ul>
         </div>
         <div>
-          <p class="font-medium tracking-wide text-[#E3E3E3]">À propos</p>
-          <ul class="mt-2 space-y-2">
+          <p class="font-bold tracking-wide text-[#E3E3E3]">À propos</p>
+          <ul class="mt-6 space-y-2">
             <li>
               <a href="https://the-dubai-life.com/a-propos/" target="_blank" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">À propos</a>
             </li>
@@ -30,9 +27,9 @@
             </li>
           </ul>
         </div>
-        <div>
-          <p class="font-medium tracking-wide text-[#E3E3E3]">Suivez-nous</p>
-          <ul class="mt-2 space-y-2">
+        <div class="col-span-2 md:col-span-1 mx-auto">
+          <p class="font-bold tracking-wide text-[#E3E3E3] col-span-2 md:col-span-1">Suivez-nous</p>
+          <ul class="mt-6 space-y-2">
             <li class="flex items-center text-white">
               <span class="mr-4"><i class="fab fa-instagram fa-lg"></i></span>
               <a href="https://www.instagram.com/the.dubai.life/" target="_blank" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">Instagram</a>
