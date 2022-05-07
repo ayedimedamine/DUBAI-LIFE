@@ -52,7 +52,7 @@
             <div class='flex flex-col'>
                 <div class="space-y-3">
                     <input
-                    placeholder="Prénom & nom"
+                    placeholder="Prénom Nom"
                     name="Nom"
                     required=""
                     type="text"
@@ -67,7 +67,7 @@
                     />
                     <!-- International Phone Number  -->
                     <input 
-                    placeholder="06 12 34 56 78"
+                    placeholder="Portable"
                     country="france"
                     required=""
                     type="tel" 
@@ -78,7 +78,7 @@
                     />
 
                     <input
-                    placeholder="Adresse de la Rue"
+                    placeholder="Rue"
                     name="adress"
                     id="adress"
                     required=""
@@ -86,20 +86,20 @@
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
-                    placeholder="Cité"
+                    placeholder="Ville"
                     name="city"
                     required
                     type="text"
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
-                    placeholder="Etat / Provenance"
+                    placeholder="Département"
                     type="text"
                     name="state"
                     class="py-4 w-full border-[#D19F46] rounded-xl shadow-sm focus:border focus:border-[#D19F46] focus:ring-[#D19F46]"
                     />
                     <input
-                    placeholder="Code Postale"
+                    placeholder="Code Postal"
                     required
                     name="zipCode"
                     type="text"
