@@ -6,8 +6,8 @@
         <img class='h-16'src='../assets/images/v1.0.0/The_dubai_life_logo.png' alt='The dubai life' />
       </a>
     </div>
-    <ul class="flex items-center md:justify-center space-x-8">
-      <!-- Drop Down Menu -->
+    <!-- <ul class="flex items-center md:justify-center space-x-8">
+      
       <li class="flex justify-center z-20">
           <div
               x-data="{
@@ -34,7 +34,7 @@
               x-id="['dropdown-button']"
               class="relative"
           >
-              <!-- Button -->
+              
               <button
                   x-ref="button"
                   x-on:click="toggle()"
@@ -47,7 +47,7 @@
                 <span class="mt-1"> <i class="fa fa-chevron-down"></i></span>
               </button>
 
-              <!-- Panel -->
+              
               <div
                   x-ref="panel"
                   x-show="open"
@@ -79,7 +79,7 @@
               </div>
           </div>
       </li>
-      <!-- End Drop Down Menu -->
+     
       <li><a href="https://the-dubai-life.com/expatriation/" target="_blank" class="flex font-normal text-sm text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">S'installer à Dubai</a></li>
       <li><a href="https://the-dubai-life.com/creer-une-entreprise/" target="_blank" class="flex font-normal text-sm tracking-wide text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">Business</a></li>
       <li><a href="https://the-dubai-life.com/investir/" target="_blank" class="flex font-normal tracking-wide text-sm text-white transition ease-in	duration-300 hover:text-[#D1A046] hover:translate-y-1">Investir</a></li>
@@ -93,16 +93,16 @@
           <i class="fab fa-whatsapp fa-2x"></i>
           </a>
       </li>
-    </ul>
+    </ul> -->
   </div>
-  <!-- Phone Navbar -->
+ 
   <ul class="relative  z-30 w-full flex md:hidden items-center justify-center space-x-8 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <li>
-      <!-- TODO: add href link to logo -->
+     
       <a href="/home" aria-label="The_dubai_life" title="The_dubai_life" class="inline-flex items-center">
       <img class='h-16'src='../../assets/images/v1.0.0/The_dubai_life_logo.png' alt='The dubai life' />
     </a>
-    <li x-data="{ show: false }">
+    <!-- <li x-data="{ show: false }">
       <button @click="show = !show" aria-label="Open Menu" title="Open Menu" class="lg:hidden p-2 float-left transition duration-200 rounded focus:outline-none focus:shadow-outline">
         <svg x-show="!show" class="w-6 text-white transition duration-300" viewBox="0 0 24 24">
           <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
@@ -116,7 +116,7 @@
           ></path>
         </svg>
       </button>
-        <!-- Mobile menu dropdown -->
+        
         <div x-show="show" class="z-90 absolute top-16 left-0 w-full transition duration-300">
         <div class="py-5 bg-black border-none shadow-sm">
           <nav>
@@ -150,6 +150,6 @@
         <a href="https://api.whatsapp.com/send/?phone=%2B971585823822&text&app_absent=0" target="_blank">
         <i class="fab fa-whatsapp fa-2x"></i>
         </a>
-    </li>
+    </li> -->
   </ul>
 </div>
