@@ -21,7 +21,7 @@ $dotenv->load();
 // $SMTP_USER = $_ENV['SMTP_USER'];
 // $SMTP_PASSWORD = $_ENV['SMTP_PASSWORD'];
 // $SMTP_PORT = $_ENV['SMTP_PORT'];
-
+// $PRICE_DISCOUNT= 2490;
 
 
 // PROD : 
