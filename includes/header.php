@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6276a3529d3f9e001262d46a&product=inline-share-buttons" async="async"></script> -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -37,8 +37,12 @@
 				<span class="ml-2"> Telegram</span>
             </div>
         </a>
+		
 		<!-- <a>
 		<script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-share-url="https://gfycat.com/difficultpoisedamericanpainthorse" data-text="notext"></script>
 		</a> -->
+		<br />
+		<!-- <div class="sharethis-inline-share-buttons" data-url="https://gfycat.com/difficultpoisedamericanpainthorse" data-message="test"></div> -->
 	</div>
+	
 </div>
