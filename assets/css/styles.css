@@ -270,26 +270,19 @@ input::-webkit-inner-spin-button {
 /*=====Header section=====*/
 header {
   min-height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4) 100%),
-    url("../images/header.jpg");
-  background-position: center;
-  background-size: cover;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .header {
   width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-.header > h1 {
-  color: var(--white);
-  font-size: 80px;
-  font-weight: 800;
-}
+
 .header span {
   display: block;
   border-bottom: 8px solid var(--priamry);
@@ -303,8 +296,8 @@ header {
 }
 .headerRight > .videocard {
   position: absolute;
-  width: 380px;
-  height: 581px;
+  width: 320px;
+  height: 500px;
   bottom: -50px;
   border-radius: 12px;
   position: relative;
@@ -317,6 +310,7 @@ header {
   object-fit: cover;
   border-radius: 20px;
   cursor: pointer;
+  background-color: #72808a;
 }
 .videocard > #pausePlay {
   position: absolute;
@@ -335,7 +329,7 @@ header {
 .videomobile {
   display: none;
   width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
   height: 250px;
   border-radius: 8px;
   position: relative;

@@ -39,7 +39,7 @@
         </div>
         <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
     </div>
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-20">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
         <div class="grid grid-rows md:grid-cols-2 gap-4 lg:gap-24 items-center md:items-start justify-center md:justify-between lg:flex-row">
         <div class="mb-10 w-full bg-white">
             <div class="mb-0">
@@ -133,15 +133,34 @@
     </div>
 </div>
 <!-- Promotion Video section -->
-
+<!-- 
 <div class="mx-auto mb-16  rounded-lg max-w-xs">
     <div class="aspect-w-5 aspect-h-7">
         <iframe src="../assets/video/promo-video.mp4" frameborder="0" allow="accelerometer; autoplay; clicpboard-write; encrypted-media; gyroscope; picture-in-pucture" allowfullscreen></iframe>
     </div>
-</div>
+</div> -->
 
+  <header class="hidden sm:block">
+      <div class="header">
+        
+        <div class="headerRight">
+          <div class="videocard">
+            <i class="fa-solid fa-circle-pause" id="pausePlay"></i>
+            <video autoplay muted loop id="myVideo">
+              <source src="../assets/video/promo-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </header>
+        <div class="videomobile">
+      <i class="fa-solid fa-circle-pause" id="pausePlay2"></i>
+      <video autoplay muted loop id="mobileVideo">
+        <source src="../assets/video/promo-video.mp4" type="video/mp4" />
+      </video>
+    </div>
     <!-- Call To Action-->
-<div class="bg-white">
+<div class="bg-white mt-32">
     <div class="relative mx-auto lg:mx-16">
         <img src='../assets/images/v1.0.0/cta.png' class="absolute inset-0 object-cover w-full h-full bg-black" alt="The Dubai Life" />
         <div class="bg-black">
@@ -161,3 +180,4 @@
 
 <!-- Footer -->
 <?php include('includes/footer.php'); ?>
+<script src="../assets/js/main.js"></script>
