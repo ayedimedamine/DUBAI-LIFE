@@ -14,7 +14,7 @@
             Jeu Concours
           </h2>
           <span class="border-t border-white md:pt-0 md:border-none text-white font-bold text-lg ">THE NEW LIFE BY DUBAI LIFE</span>
-          <p class="italic text-2xl md:text-3xl tracking-wide font-bold text-[#D19F46] my-4">
+          <p class="italic text-xl md:text-3xl tracking-normal sm:tracking-wide font-bold text-[#D19F46] my-4 mx-2">
             Gagnez un <span class="text-[#F3CC94]">appartement</span> sur <span class="text-[#F3CC94]">Dubaï</span>
           </p>
           <a
@@ -62,9 +62,9 @@
             </div>
             <div class="border border-l-0 border-black flex flex-col items-center justify-center mt-16">
                 <div class="w-full " >
-                <div class="bg-black w-full h-20 flex flex-col items-start justify-center px-4 py-4 tracking-wide pl-6">
-                    <p class="text-[#D19F46] text-md lg:text-xl font-bold">Un point d'information</p>
-                    <p class="text-white text-md lg:text-xl font-bold">Maximisez vos chances de gagnez</p>
+                <div class="bg-black w-full h-20 flex flex-col items-start justify-center px-2 md:px-4 py-4 tracking-wide lg:pl-6">
+                    <p class="text-[#D19F46] text-sm lg:text-xl font-bold">Un point d'information</p>
+                    <p class="text-white  text-sm lg:text-xl font-bold">Maximisez vos chances de gagnez</p>
                 </div>
                 </div>
                 <div class="py-4 italic">
@@ -73,7 +73,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">04</span>
                         </div>
                         <div class="flex items-center justify-start col-span-3">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans text-lg font-semibold tracking-normal md:tracking-wider text-black">
                                 E-BOOKS
                             </span>
                         </div>
@@ -86,7 +86,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">05</span>
                         </div>
                         <div class="col-span-3 flex items-center justify-start">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                TICKETS
                             </span>
                         </div>
@@ -96,7 +96,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">08</span>
                         </div>
                         <div class="flex items-center justify-start col-span-3">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                 E-BOOKS
                             </span>
                         </div>
@@ -109,7 +109,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">11</span>
                         </div>
                         <div class="col-span-3 flex items-center justify-start">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                TICKETS
                             </span>
                         </div>
@@ -119,7 +119,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">12</span>
                         </div>
                         <div class="flex items-center justify-start col-span-3">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                 E-BOOKS
                             </span>
                         </div>
@@ -132,7 +132,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">18</span>
                         </div>
                         <div class="col-span-3 flex items-center justify-start">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                TICKETS
                             </span>
                         </div>
@@ -142,7 +142,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">16</span>
                         </div>
                         <div class="flex items-center justify-start col-span-3">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                 E-BOOKS
                             </span>
                         </div>
@@ -155,7 +155,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">25</span>
                         </div>
                         <div class="col-span-3 flex items-center justify-start">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                TICKETS
                             </span>
                         </div>
@@ -165,7 +165,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">20</span>
                         </div>
                         <div class="flex items-center justify-start col-span-3">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                 E-BOOKS
                             </span>
                         </div>
@@ -178,7 +178,7 @@
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">32</span>
                         </div>
                         <div class="col-span-3 flex items-center justify-start">
-                            <span class="font-sans text-lg font-semibold tracking-wider text-black">
+                            <span class="font-sans tracking-normal text-lg font-semibold md:tracking-wider text-black">
                                TICKETS
                             </span>
                         </div>

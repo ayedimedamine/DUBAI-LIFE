@@ -1799,6 +1799,11 @@ select {
   padding-right: 0px;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -1870,6 +1875,11 @@ select {
   line-height: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1908,6 +1918,10 @@ select {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
 }
 
 .text-\[\#E3E3E3\] {
@@ -2220,6 +2234,15 @@ select {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:tracking-wide {
+    letter-spacing: 0.025em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2355,6 +2378,11 @@ select {
     padding-bottom: 10px;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
@@ -2447,6 +2475,10 @@ select {
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:pl-6 {
+    padding-left: 1.5rem;
   }
 
   .lg\:text-2xl {
