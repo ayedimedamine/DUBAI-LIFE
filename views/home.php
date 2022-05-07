@@ -133,14 +133,12 @@
     </div>
 </div>
 <!-- Promotion Video section -->
-
 <div class="hidden sm:block mx-auto mb-16  rounded-lg max-w-md h-full w-full relative">
     <header class="hidden sm:flex justify-center items-center">
       <div class="header"> 
         <div class="headerRight">
           <div class="videocard">
-            <!-- <i class="fa-solid fa-circle-pause" id="pausePlay"></i> -->
-            <video autoplay loop playsinline preload="auto" id="myVideo" playsinline  onloadedmetadata="this.muted = true" controls>
+            <video autoplay loop preload="auto" id="myVideo" playsinline  onloadedmetadata="this.muted = true" controls>
               <source src="../assets/video/promo-video.mp4" type="video/mp4" />
             </video>
           </div>
@@ -149,8 +147,7 @@
     </header>
 </div>
 <div class="videomobile">
-    <!-- <i class="fa-solid fa-circle-pause" id="pausePlay2"></i> -->
-    <video autoplay loop id="mobileVideo" controls>
+    <video class="video-border" autoplay loop  preload="auto" id="mobileVideo" controls>
         <source src="../assets/video/promo-video.mp4" type="video/mp4" />
     </video>
 </div>
@@ -175,4 +172,4 @@
 
 <!-- Footer -->
 <?php include('includes/footer.php'); ?>
-<script src="../assets/js/video.js"></script>
+
