@@ -64,7 +64,7 @@
                 <div class="w-full " >
                 <div class="bg-black w-full h-full flex flex-col items-start justify-center px-2 md:px-4 py-4 tracking-tighter sm:tracking-wide lg:pl-6">
                     <p class="text-[#D19F46] text-base sm:text-sm lg:text-xl  font-bold">Un point d'information</p>
-                    <p class="text-white  text-base sm:text-sm lg:text-xl font-bold">Maximisez vos chances de gagnez</p>
+                    <p class="text-white  text-base sm:text-sm lg:text-xl font-bold">Maximisez vos chances de gagner</p>
                 </div>
                 </div>
                 <div class="py-4 italic">
