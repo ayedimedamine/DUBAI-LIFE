@@ -61,10 +61,10 @@
                 </p>
             </div>
             <div class="border border-l-0 border-black flex flex-col items-center justify-center mt-16">
-                <div class="w-full pr-8 -mt-10" >
-                <div class="bg-black w-full h-20 flex flex-col items-start justify-center px-4 py-4">
-                    <p class="text-[#D19F46] text-md md:text-lg font-bold">Un point d'information</p>
-                    <p class="text-white text-md md:text-lg font-bold">Maximisez vos chances de gagnez</p>
+                <div class="w-full " >
+                <div class="bg-black w-full h-20 flex flex-col items-start justify-center px-4 py-4 tracking-wide pl-6">
+                    <p class="text-[#D19F46] text-md lg:text-xl font-bold">Un point d'information</p>
+                    <p class="text-white text-md lg:text-xl font-bold">Maximisez vos chances de gagnez</p>
                 </div>
                 </div>
                 <div class="py-4 italic">
