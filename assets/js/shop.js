@@ -28,7 +28,7 @@ let totalTickets = document.getElementById("listTick");
 let message = document.querySelector(".message");
 let popover = document.getElementById("popover__title");
 let content = document.querySelector(".popover__content");
-let price = 24.9;
+let price = "24.90";
 let clicked = 0;
 
 var timerID = setTimeout(() => {
@@ -102,7 +102,7 @@ const showMessagePrice = (quantity, unitPrice) => {
     bonus = 0;
     text = `achetez <span>${
       4 - quantity
-    } </span> autres tickets pour avoir <span>1</span> ticket bonus et économisez <span>${unitPrice.toFixed(
+    } </span> autres tickets pour avoir <span>1</span> ticket bonus et économisez <span>${parseFloat(unitPrice).toFixed(
       2
     )}&euro; </span>.`;
     oldP.innerHTML = "";
