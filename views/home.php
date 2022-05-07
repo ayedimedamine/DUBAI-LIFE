@@ -114,7 +114,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="grid grid-cols-12 gap-2">
+                    <div class="grid grid-cols-12 gap-0 md:gap-2">
                         <div class="flex items-center justify-start col-span-2">
                             <span class="text-[#D19F46] text-xl md:text-4xl font-black">12</span>
                         </div>
