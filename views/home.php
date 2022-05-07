@@ -133,32 +133,27 @@
     </div>
 </div>
 <!-- Promotion Video section -->
-<!-- 
-<div class="mx-auto mb-16  rounded-lg max-w-xs">
-    <div class="aspect-w-5 aspect-h-7">
-        <iframe src="../assets/video/promo-video.mp4" frameborder="0" allow="accelerometer; autoplay; clicpboard-write; encrypted-media; gyroscope; picture-in-pucture" allowfullscreen></iframe>
-    </div>
-</div> -->
 
-  <header class="hidden sm:block">
-      <div class="header">
-        
+<div class="hidden sm:block mx-auto mb-16  rounded-lg max-w-md h-full w-full relative">
+    <header class="hidden sm:flex justify-center items-center">
+      <div class="header"> 
         <div class="headerRight">
           <div class="videocard">
-            <i class="fa-solid fa-circle-pause" id="pausePlay"></i>
-            <video autoplay muted loop id="myVideo">
+            <!-- <i class="fa-solid fa-circle-pause" id="pausePlay"></i> -->
+            <video autoplay loop playsinline preload="auto" id="myVideo" playsinline  onloadedmetadata="this.muted = true" controls>
               <source src="../assets/video/promo-video.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
       </div>
     </header>
-        <div class="videomobile">
-      <i class="fa-solid fa-circle-pause" id="pausePlay2"></i>
-      <video autoplay muted loop id="mobileVideo">
+</div>
+<div class="videomobile">
+    <!-- <i class="fa-solid fa-circle-pause" id="pausePlay2"></i> -->
+    <video autoplay loop id="mobileVideo" controls>
         <source src="../assets/video/promo-video.mp4" type="video/mp4" />
-      </video>
-    </div>
+    </video>
+</div>
     <!-- Call To Action-->
 <div class="bg-white mt-32">
     <div class="relative mx-auto lg:mx-16">
@@ -180,4 +175,4 @@
 
 <!-- Footer -->
 <?php include('includes/footer.php'); ?>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/video.js"></script>
