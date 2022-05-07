@@ -19,7 +19,7 @@
 		<!-- Whatsapp -->
 		<a 
           class="text-white text-xl"
-          href="whatsapp://send?text=https://media.giphy.com/media/BUzI1toK5LhNOidELL/giphy.gif"
+          href="whatsapp://send?text=J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours ! https://www.the-new-life.fr https://media.giphy.com/media/BUzI1toK5LhNOidELL/giphy.gif"
           data-action="share/whatsapp/share"
           target="_blank" >
 			<div class="rounded-md flex items-center py-2 px-6 bg-[#25d366] hover:shadow-md transition-all">
