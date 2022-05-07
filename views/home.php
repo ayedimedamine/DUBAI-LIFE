@@ -270,7 +270,7 @@
     </header>
 </div>
 <div class="videomobile">
-    <video class="video-border" autoplay loop  preload="auto" id="mobileVideo" controls>
+    <video class="video-border" autoplay loop  preload="auto" id="mobileVideo" playsinline  onloadedmetadata="this.muted = true" controls>
         <source src="../assets/video/promo-video.mp4" type="video/mp4" />
     </video>
 </div>
