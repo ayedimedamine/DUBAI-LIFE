@@ -132,6 +132,13 @@
         </div>
     </div>
 </div>
+<!-- Promotion Video section -->
+
+<div class="mx-auto mb-16  rounded-lg max-w-xs">
+    <div class="aspect-w-5 aspect-h-7">
+        <iframe src="../assets/video/promo-video.mp4" frameborder="0" allow="accelerometer; autoplay; clicpboard-write; encrypted-media; gyroscope; picture-in-pucture" allowfullscreen></iframe>
+    </div>
+</div>
 
     <!-- Call To Action-->
 <div class="bg-white">
