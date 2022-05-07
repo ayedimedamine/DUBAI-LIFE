@@ -65,27 +65,28 @@
       </div>
     </div> -->
     <div class="grid grid-rows md:grid-cols-3 items-center gap-4 py-10">
-  <div class="mt-4 sm:mt-0 flex flex-col items-center md:items-start  justify-center">
-        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
-          <img class='w-24'src='../assets/images/v1.0.0/The_dubai_life_logo.png' alt='The dubai life' />
-        </a>
-          <p class="font-bold tracking-wide text-[#E3E3E3] md:text-start mt-2">
-            The New Life by The Dubai Life
-          </p>
-      </div>
-  <div class="order-first md:order-2">
-     <p class="font-bold tracking-wide text-[#E3E3E3] text-center md:text-start">Suivez-nous</p>
+       <div class="mx-auto md:mx-0">
+          <p class="font-bold tracking-wide text-[#E3E3E3] text-left">Suivez-nous</p>
           <ul class="mt-4 space-y-2">
-            <li class="flex items-center text-white justify-center md:justify-left">
+            <li class="flex items-center text-white justify-start">
               <span class="mr-4"><i class="fab fa-instagram fa-lg"></i></span>
               <a href="https://www.instagram.com/the.dubai.life/" target="_blank" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">Instagram</a>
             </li>
-            <li class="flex items-center text-white justify-center md:justify-left">
-              <span class="mr-4"><i class="fab fa-snapchat fa-lg"></i></i></span>
+            <li class="flex items-center text-white justify-start">
+              <span class="mr-4 "><i class="fab fa-snapchat fa-lg"></i></i></span>
               <a href="https://www.snapchat.com/add/the-dubailife" class="text-[#E3E3E3] transition-colors duration-300 hover:text-deep-purple-accent-200">Snapchat</a>
             </li>
           </ul>
   </div>
+  <div class="mt-4 sm:mt-0 flex flex-col items-center md:items-start  justify-center">
+        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400 mx-auto">
+          <img class='w-16 h-auto object-cover'src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' />
+        </a>
+          <p class="font-bold tracking-wide text-[#D19F46] mx-auto mt-2">
+            The New Life by The Dubai Life
+          </p>
+      </div>
+ 
   <div class="order-last" >
     <p class="mt-8 md:mt-0 text-center  text-xs text-[#6C6C6C] ">
         © Copyright 2018. <a href="https://the-dubai-life.com/" target="_blank">T R D L REAL ESTATE All rights Reserved.</a>
