@@ -34,7 +34,7 @@
         <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
         <div class="mx-auto text-center text-lg col-span-10 md:col-span-6 ">
         <h1><span class="font-bold">The Dubaï Life</span> lance <span class="font-bold">le plus grand jeu concours</span></h1>
-        <p>Participer jusqu'à <span class="font-bold text-[#D19F46]">DÉBUT JUILLET</span> en achetant vos tickets</p>
+        <p>Participer jusqu'à <span class="font-bold text-[#D19F46]">DÉBUT JUILLET</span> en achetant votre e-book</p>
         <p>pour démarrer Votre New Life!</p>
         </div>
         <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
@@ -64,7 +64,7 @@
                 <div class="w-full " >
                 <div class="bg-black w-full h-full flex flex-col items-start justify-center px-2 md:px-4 py-4 tracking-tighter sm:tracking-wide lg:pl-6">
                     <p class="text-[#D19F46] text-base sm:text-sm lg:text-xl  font-bold">Un point d'information</p>
-                    <p class="text-white  text-base sm:text-sm lg:text-xl font-bold">Maximisez vos chances de gagnez</p>
+                    <p class="text-white  text-base sm:text-sm lg:text-xl font-bold">Maximisez vos chances de gagner</p>
                 </div>
                 </div>
                 <div class="py-4 italic">
@@ -270,7 +270,7 @@
     </header>
 </div>
 <div class="videomobile">
-    <video class="video-border" autoplay loop  preload="auto" id="mobileVideo" controls>
+    <video class="video-border" autoplay loop  preload="auto" id="mobileVideo" playsinline  onloadedmetadata="this.muted = true" controls>
         <source src="../assets/video/promo-video.mp4" type="video/mp4" />
     </video>
 </div>
