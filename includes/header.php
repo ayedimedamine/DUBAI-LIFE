@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=6276adcea8c0f60012f4f533&product=custom-share-buttons"></script>
+  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=6276adcea8c0f60012f4f533&product=custom-share-buttons async='async'"></script>
   <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6276adcea8c0f60012f4f533&product=inline-share-buttons" async="async"></script> -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
