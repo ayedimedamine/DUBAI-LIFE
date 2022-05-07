@@ -1,11 +1,10 @@
 <?php
 
     require 'vendor/autoload.php';
-    require 'class/Campaign.php';
+    require 'class/Ticket.php';
     
-   $campaigns = new Campaign();
-   $campaigns = $campaigns->getall();
-    // echo json_encode($campaigns, True);
+   $tickets = new Ticket();
+   $tickets = $tickets->getall();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +15,7 @@
 </head>
 <div class="card">
   <div class="table-title">
-    <h2>Campaigns</h2>
+    <h2>Customers</h2>
   </div>
   <div class="button-container">
   </div>
@@ -27,37 +26,19 @@
       <thead>
         <tr>
           <th>No</th>
-          <th>NOM</th>
           <th>EMAIL</th>
-          <th>PHONE</th>
-          <th>ADDRESS</th>
-          <th>CITY</th>
-          <th>STATE</th>
-          <th>COUNTRY</th>
-          <th>ZIPCODE</th>
-          <th>QUANTITY</th>
-          <th>PAYE</th>
-          <th>FACTURE</th>
+          <th>TICKET CODE</th>
           <th>DATE</th>
         </tr>
       </thead>
       <tbody>
           <?php 
-          foreach ($campaigns as $campaign){
+          foreach ($tickets as $ticket){
               echo "<tr>" . 
-              "<td>" .$campaign['id'] . "</td>" .
-              "<td>" .$campaign['nom'] . "</td>" .
-              "<td>" .$campaign['email'] . "</td>" .
-              "<td>" .$campaign['address'] . "</td>" .
-              "<td>" .$campaign['phone'] . "</td>" .
-              "<td>" .$campaign['state'] . "</td>" .
-              "<td>" .$campaign['country'] . "</td>" .
-              "<td>" .$campaign['zipCode'] . "</td>" .
-              "<td>" .$campaign['quantity'] . "</td>" .
-              "<td>" .$campaign['payment'] . "</td>" .
-              "<td>" .$campaign['paye'] . "</td>" .
-              "<td>" .$campaign['facture'] . "</td>" .
-              "<td>" .$campaign['reg_date'] . "</td>" .
+              "<td>" .$ticket['id'] . "</td>" .
+              "<td>" .$ticket['email'] . "</td>" .
+              "<td>" .$ticket['ticketcode'] . "</td>" .
+              "<td>" .$ticket['reg_date'] . "</td>" .
               "</tr>";
               
           }

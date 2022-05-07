@@ -57,5 +57,3 @@ $SMTP_HOST=getenv('SMTP_HOST');
 $SMTP_USER=getenv('SMTP_USER');
 $SMTP_PASSWORD=getenv('SMTP_PASSWORD');
 $SMTP_PORT=getenv('SMTP_PORT');
-
-
