@@ -9,7 +9,7 @@
 
              <!-- Twitter  -->
 		<a class="text-white text-xl" 
-            href="https://twitter.com/intent/tweet?url=https://gfycat.com/difficultpoisedamericanpainthorse"
+            href="https://twitter.com/intent/tweet?text=J’ai pris mon ticket pour Dubaï ! Participes toi aussi au plus grand jeu concours ! https://www.the-new-life.fr&url=https://gfycat.com/difficultpoisedamericanpainthorse"
           data-action="share/twitter/share"
           target="_blank">
 		<div class="rounded-md flex items-center py-2 px-6 bg-[#1da1f2] hover:shadow-md transition-all">
