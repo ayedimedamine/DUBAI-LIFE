@@ -1,8 +1,71 @@
-<?php
+ <?php
   include 'includes/header.php';
   include 'includes/navbar.php'; 
 ?>
+<div class="w-full p-0 m-0 relative">
+    <section class='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20 relative'>
+       <p class='text-2xl font-black leading-none sm:text-3xl xl:text-4xl mb-10 text-center'>
+        Terms and Conditions Of use
+       </p>
+       <div class='py-8'>
+      <div class='mb-3 space-y-4'>
+          <p class='text-xl font-extrabold leading-none sm:text-2xl xl:text-3xl'>
+            Revision Number:
+          </p>
+          <p class='text-xl font-extrabold leading-none sm:text-2xl xl:text-3xl'>
+           Issue Date:
+            
+          </p>
+          <p class='text-xl font-extrabold leading-none sm:text-2xl xl:text-3xl my-2'>
+            The domain name www.the-dubai-life.com (hereinafter referred to as “Website”) is owned and
+            managed by TRDL ( TRDL FZ CO and TRDL REAL ESTATE) , companies incorporated in the Emirate of
+            Dubai with their registered offices in , Dubai, UAE (hereinafter referred to as “TRDL”). 
+          </p>
+          <p class='text-xl font-extrabold leading-none sm:text-2xl xl:text-3xl my-2'>
+            For the purpose of these terms of use, wherever the context so requires “you”, “yourself”, “client”
+            or “user” or similar terminology are all in use in reference to the individual user of this Website. The
+            terms “we”, “us”, “our”, “ours” shall refer to TRDL.
+          </p>
+          <p class='text-xl font-extrabold leading-none sm:text-2xl xl:text-3xl my-2'>
+            We provide our services to you subject to the notices, terms, and conditions set forth in this
+            agreement (hereinafter referred to as the “Terms”). In addition, when you use any www.the-dubai-
+            life.com / www.the-new-life.fr service, you will be subject to the rules, guidelines, policies, terms,
+            conditions, and documents applicable to such service, and they are incorporated into these Terms by
+            this reference.
+          </p>
+          <p class='text-xl font-extrabold leading-none sm:text-2xl xl:text-3xl my-2'>
+            ACCESSING, BROWSING OR OTHERWISE USING THIS WEBSITE INDICATES YOUR AGREEMENT TO
+            THESE TERMS, SO YOU ARE ADVISED TO READ THIS AGREEMENT CAREFULLY BEFORE PROCEEDING.
+          </p>
+      </div>
+     
+        <div>
+            <p class='text-gray-900 font-bold md:text-md md:text-xl my-3'>
+             $DEFINITIONS AND INTERPRETATION
+            </p>
+          <div>
+              <p  class='text-gray-700 m-5'>
+              1.1.1 In these Terms, all capitalised words and expressions shall have the following meanings:
+              </p>
+              <p  class='text-gray-700 m-5'>
+               1.1.2. Additional Policies: The Rules, Privacy Policy, and Cookies
+              </p>
+              <p  class='text-gray-700 my-5'>
+               1.1.3. AED: United Arab Emirates Dirham, the lawful currency of the United Arab Emirates.
+              </p>
+          </div>
+        </div>
 
+    </div>  
+    <section>
+</div>
+<?php include('includes/footer.php'); ?>
+
+
+
+
+
+<!--
 <div>
     <p>&nbsp;</p>
 </div>
@@ -2049,5 +2112,4 @@
 </div>
 <div>
     <p>21.2.1 In the case where less than 12 500 products have been sold, TRDL has the right to cancel the grand prize draw and to refund all participants for their draw entering.&nbsp;</p>
-</div>
-<?php include('includes/footer.php'); ?>
+</div> -->

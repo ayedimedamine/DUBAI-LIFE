@@ -1,4 +1,4 @@
-<div class="bg-black border-t-4 border-[#D19F46]">
+<div class="bg-black border-t-4 border-[#D19F46] relative bottom-0">
   <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
     <!-- <div class="grid row-gap-10 mb-8 lg:grid-cols-6">
       <div class="grid grid-cols-2 gap-10 md:gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
