@@ -406,11 +406,11 @@
                     </div>
                 </div>
                 <!-- Order Call To Action Button-->
-                <div class="mt-6 grid grid-cols-4  items-center justify-start">
+                <div class="mt-6 w-full  items-center justify-start">
                     <button
                     type="submit"
                     id="submitBtn"
-                    class="font-bold text-2xl bg-black text-white tracking-wider col-start-2 col-span-3 rounded-full h-12 transition duration-300">Acheter</button>
+                    class="font-bold text-2xl bg-black text-white tracking-wider w-full rounded-full h-12 transition duration-300">Acheter</button>
                 </div>
                 <!-- Order Discount -->
                 <div class="mt-6  grid-cols-8 h-12 items-center justify-start hidden">
