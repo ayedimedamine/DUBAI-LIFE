@@ -1,4 +1,15 @@
-<div class=" md:block mx-6 md:mx-8 lg:mx-16">
+<div>
+	<div class='grid grid-cols-12 gap-2 mt-8 items-start justify-center'>
+        <div class='border-t-2 border-[#D19F46] mt-4 col-span-2 md:col-span-4'></div>
+        <div class='mx-auto text-center col-span-8 md:col-span-4'>
+            <h1 class='font-bold text-lg md:text-xl md:tracking-wider'>
+           Partagez avec vos proches
+            </h1>
+        </div>
+        <div class='border-t-2 border-[#D19F46] mt-4 col-span-2 md:col-span-4'></div>
+    </div>
+<div class="md:block mx-6 md:mx-8 lg:mx-16 mt-16">	 
+	
 	<div class=" mt-6 mb-8 grid grid-cols-5 gap-1 md:max-w-sm mx-auto">   
 
 	 <!-- FACEBOOK  -->
@@ -64,4 +75,5 @@
 		<!-- <div class="sharethis-inline-share-buttons" data-url="https://gfycat.com/difficultpoisedamericanpainthorse" data-message="test"></div> -->
 	</div>
 	
+</div>
 </div>
