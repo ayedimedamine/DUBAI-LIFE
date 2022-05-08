@@ -1444,6 +1444,26 @@ select {
   width: 16rem;
 }
 
+.w-\[16px\] {
+  width: 16px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[25px\] {
+  width: 25px;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -1981,6 +2001,14 @@ select {
 
 .pr-1 {
   padding-right: 0.25rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {

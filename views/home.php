@@ -62,8 +62,10 @@
             </div>
             <div class="border border-l-0 border-black flex flex-col items-center justify-center mt-16">
                 <div class="w-full " >
-                <div class="bg-black w-full h-full flex flex-col items-start justify-center px-2 md:px-4 py-4 tracking-tighter sm:tracking-wide lg:pl-6">
-                    <p class="text-[#D19F46] text-base sm:text-sm lg:text-xl  font-bold">Un point d'information</p>
+                <div class="bg-black w-full h-full flex items-center justify-start px-2 md:px-4 py-4 tracking-tighter sm:tracking-wide lg:pl-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#D19F46] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                   </svg>
                     <p class="text-white  text-base sm:text-sm lg:text-xl font-bold">Maximisez vos chances de gagner</p>
                 </div>
                 </div>
@@ -114,29 +116,6 @@
                             </span>
                         </div>
                     </div>
-                    <!-- <div class="grid grid-cols-12 gap-2">
-                        <div class="flex items-center justify-start col-span-2">
-                            <span class="text-[#D19F46] text-base sm:text-lg md:text-4xl font-black">08</span>
-                        </div>
-                        <div class="flex items-center justify-start col-span-3">
-                            <span class="whitespace-nowrap font-sans text-base sm:text-lg font-semibold tracking-tighter sm:tracking-normal md:tracking-wider text-black">
-                                E-BOOKS
-                            </span>
-                        </div>
-                        <div class="flex items-center justify-center col-span-2">
-                            <span class="font-sans font-semibold tracking-wider text-base sm:text-lg md:text-4xl text-black">
-                                =
-                            </span>
-                        </div>
-                        <div class="flex items-center justify-start col-span-2">
-                            <span class="text-[#D19F46] text-base sm:text-lg md:text-4xl font-black">11</span>
-                        </div>
-                        <div class="col-span-3 flex items-center justify-start">
-                            <span class="font-sans text-base sm:text-lg font-semibold tracking-tighter sm:tracking-normal md:tracking-wider text-black">
-                               TICKETS
-                            </span>
-                        </div>
-                    </div> -->
                     <div class="grid grid-cols-12 gap-2">
                         <div class="flex items-center justify-start col-span-2">
                             <span class="text-[#D19F46] text-base sm:text-lg md:text-4xl font-black">12</span>
@@ -226,9 +205,10 @@
             </div>
             </div>
         </div>
-        <div class="relative w-full cursor-pointer bg-black py-12">
+        <div class="relative w-full cursor-pointer bg-black pb-12 ">
+            <p class='font-medium text-white opacity-95 text-center tetx-xl md:text-2xl my-8'>Gagnez</p> 
              <p class="text-center text-white tetx-lg md:text-2xl font-semibold my-2 border-t border-white mx-4 py-4">
-                <span class='font-medium opacity-95'>Gagnez :</span> Visa + Billets + Ouverture de société + Appartement dans une résidence avec piscine privée + Pleins d'autres cadeaux
+                Visa + Billets + Ouverture de société + Appartement dans une résidence avec piscine privée + Pleins d'autres cadeaux
             </p>
              <p class="w-32 mx-auto mb-4 border-t border-white"><p>
             <img class="absolute right-0 w-28 md:w-56 object-cover h-auto -mr-2 md:-mr-4 mt-0" src="../assets/images/v1.0.0/gift.png" alt="The Dubai Life" />
