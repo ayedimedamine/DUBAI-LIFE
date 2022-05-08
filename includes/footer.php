@@ -80,11 +80,8 @@
   </div>
   <div class="mt-4 sm:mt-0 flex flex-col items-center md:items-start  justify-center">
         <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400 mx-auto">
-          <img class='w-16 h-auto object-cover'src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' />
+          <img class='w-64 h-auto object-cover'src='../assets/images/v1.0.0/logoFooter.png' alt='The dubai life' />
         </a>
-          <p class="font-bold tracking-wide text-[#D19F46] mx-auto mt-2">
-            The New Life by The Dubai Life
-          </p>
       </div>
  
   <div class="order-last" >

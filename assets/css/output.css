@@ -1428,6 +1428,14 @@ select {
   width: 5rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
