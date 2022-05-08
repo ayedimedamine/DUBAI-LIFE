@@ -10,7 +10,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/cancel', 'views/home.php');
     $r->addRoute('GET', '/success', 'views/successModal.php'); // SUCCESS MODAL 
     // $r->addRoute('GET', '/mail', 'views/email-v1.html'); // EMAIL TEMPLATE VERSION 1
-    $r->addRoute('GET', '/mail', 'views/email-v2.html'); // EMAIL TEMPLATE VERSION 2
+    // $r->addRoute('GET', '/mail', 'views/email-v2.html'); // EMAIL TEMPLATE VERSION 2
     // $r->addRoute('GET', '/mail', 'views/email-tdl.html'); 
 
     $r->addRoute('POST', '/checkout', 'class/checking.php');
