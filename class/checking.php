@@ -119,7 +119,10 @@ if (!empty($data)) {
         'quantity' => $quantity + $data['free_tickets'],
         'tax_rates'=> [$TAX_RATE_ID],
       ]],
-    
+      
+      'payment_method_types' => [
+        'card'
+    ],
       'customer' => $client->id,
       'expires_at' => time() + (4 * 60 * 60),
       'mode' => 'payment',
@@ -139,6 +142,9 @@ else {
         'quantity' => $quantity,
         'tax_rates'=> [$TAX_RATE_ID],
       ]],
+      'payment_method_types' => [
+        'card'
+    ],
       'customer' => $client->id,
       'expires_at' => time() + (4 * 60 * 60),
       'mode' => 'payment',
