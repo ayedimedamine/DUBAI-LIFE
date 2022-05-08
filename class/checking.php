@@ -124,7 +124,7 @@ if (!empty($data)) {
       'expires_at' => time() + (4 * 60 * 60),
       'mode' => 'payment',
       'success_url' => $DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
-      'cancel_url' => 'https://www.the-dubai-life.com',
+      'cancel_url' => $DOMAIN . '/shop',
       'metadata' => $metadata,
       'discounts'=> [[
         'coupon' => $data['coupon']
@@ -143,7 +143,7 @@ else {
       'expires_at' => time() + (4 * 60 * 60),
       'mode' => 'payment',
       'success_url' => $DOMAIN . '/success?session_id={CHECKOUT_SESSION_ID}',
-      'cancel_url' => 'https://www.the-dubai-life.com',
+      'cancel_url' => $DOMAIN . '/shop',
       'metadata' => $metadata,
     ]);
   }
