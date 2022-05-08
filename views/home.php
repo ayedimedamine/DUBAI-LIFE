@@ -34,7 +34,7 @@
         <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
         <div class="mx-auto text-center text-lg col-span-10 md:col-span-6 ">
         <h1><span class="font-bold">The Dubaï Life</span> lance <span class="font-bold">le plus grand jeu concours</span></h1>
-        <p>Participer jusqu'à <span class="font-bold text-[#D19F46]">DÉBUT JUILLET</span> en achetant votre e-book</p>
+        <p>Participez jusqu'à <span class="font-bold text-[#D19F46]">DÉBUT JUILLET</span> en achetant votre e-book</p>
         <p>pour démarrer Votre New Life!</p>
         </div>
         <div class="border-t-2 border-[#D19F46] mt-4 col-span-1 md:col-span-3"></div>
