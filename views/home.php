@@ -206,7 +206,7 @@
             </div>
         </div>
         <div class="relative w-full cursor-pointer bg-black pb-12 ">
-            <p class='font-semibold text-white text-center tetx-xl md:text-2xl my-8'>Gagnez</p> 
+            <p class='font-semibold text-white text-center text-3xl my-8'>Gagnez</p> 
              <p class="text-center text-white tetx-lg md:text-2xl font-semibold my-2 border-t border-white mx-4 py-4">
                 Visa + Billets + Ouverture de société + Appartement dans une résidence avec piscine privée + Pleins d'autres cadeaux
             </p>
