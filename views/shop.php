@@ -406,6 +406,12 @@
                     </div>
                 </div>
                 <!-- Order Call To Action Button-->
+                <br/>
+                <div class="mt-8 md:mt-0 text-center  text-xs text-[#6C6C6C]" >
+                <span>
+                En cliquant sur “Acheter”, vous acceptez <a href="https://www.the-new-life.fr/terms" target="_blank" style="color:blue;">les conditions générales d’utilisations</a> .
+                </span>
+                </div>
                 <div class="mt-6 w-full  items-center justify-start">
                     <button
                     type="submit"
