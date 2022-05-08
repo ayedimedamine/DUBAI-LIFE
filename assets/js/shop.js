@@ -89,7 +89,7 @@ popover.addEventListener("click", () => {
 content.style.visibility = "visible";
 content.style.opacity = "1";
 content.style.transform = "translate(0, -20px)";
-message.innerHTML = `Acheter <span> 3 </span> autres tickets pour avoir <span>1</span> ticket bonus et économiser <span> 24.90 &euro; </span>.`;
+message.innerHTML = `Acheter <span> 3 </span> autres E-Book pour avoir <span>1</span> ticket bonus et économiser <span> 24.90 &euro; </span>.`;
 //All about Price logic (bonus,price,total,text etc ....) :
 const showMessagePrice = (quantity, unitPrice) => {
   let bonus = 0;
@@ -102,7 +102,7 @@ const showMessagePrice = (quantity, unitPrice) => {
     bonus = 0;
     text = `Acheter <span>${
       4 - quantity
-    } </span> autres tickets pour avoir <span>1</span> ticket bonus et économiser <span>${parseFloat(unitPrice).toFixed(
+    } </span> autres E-Book pour avoir <span>1</span> ticket bonus et économiser <span>${parseFloat(unitPrice).toFixed(
       2
     )}&euro; </span>.`;
     oldP.innerHTML = "";
@@ -113,7 +113,7 @@ const showMessagePrice = (quantity, unitPrice) => {
     finalPrice = (unitPrice * quantity).toFixed(2);
     text = `Acheter <span>${
       8 - quantity
-    } </span> autres tickets pour avoir <span>3</span> tickets bonus et économiser <span>${(
+    } </span> autres E-Book pour avoir <span>3</span> tickets bonus et économiser <span>${(
       3 * unitPrice
     ).toFixed(2)} &euro;</span>.`;
     oldP.innerHTML = `${oldPrice} &euro;`;
@@ -124,7 +124,7 @@ const showMessagePrice = (quantity, unitPrice) => {
     finalPrice = (unitPrice * quantity).toFixed(2);
     text = `Acheter <span>${
       (Math.floor(quantity / 4) + 1) * 4 - quantity
-    }</span> autres tickets pour avoir <span>${
+    }</span> autres E-book pour avoir <span>${
       bonus + 3
     } </span> tickets bonus et économiser <span>${(
       (bonus + 3) *
