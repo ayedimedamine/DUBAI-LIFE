@@ -86,7 +86,7 @@
  
   <div class="order-last" >
     <p class="mt-8 md:mt-0 text-center  text-xs text-[#6C6C6C] ">
-        © Copyright 2018. <a href="https://the-dubai-life.com/" target="_blank">T R D L REAL ESTATE All rights Reserved.</a>
+        © Copyright 2018. <a href="https://the-dubai-life.com/" target="_blank">T R D L REAL ESTATE All rights Reserved.<br><span>Powered by <a href="https://www.numerys.io/" target="_blank">Numerys</a></span>
       </p>
   </div>
 
