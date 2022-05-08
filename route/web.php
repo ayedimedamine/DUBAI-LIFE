@@ -25,6 +25,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
 
 
     $r->addRoute('GET', '/terms', 'views/terms.php');
+    $r->addRoute('GET', '/.well-known/apple-developer-merchantid-domain-association', 'config/apple-developer-merchantid-domain-association');
 
 });
 
