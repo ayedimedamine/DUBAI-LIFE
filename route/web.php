@@ -12,7 +12,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/maintenance', 'views/maintenance.php'); // maintenance page 
    //$r->addRoute('GET', '/mail', 'views/email-v1.html'); // EMAIL TEMPLATE VERSION 1
    // $r->addRoute('GET', '/mail', 'views/email-v2.html'); // EMAIL TEMPLATE VERSION 2
-   // $r->addRoute('GET', '/mail', 'views/email-fail.html'); // Email template for payment fail 
+//    $r->addRoute('GET', '/mail', 'views/email-fail.html'); // Email template for payment fail 
    //$r->addRoute('GET', '/mail', 'views/email-tdl.html'); 
 
     $r->addRoute('POST', '/checkout', 'class/checking.php');
