@@ -87,7 +87,7 @@ popover.addEventListener("click", () => {
 content.style.visibility = "visible";
 content.style.opacity = "1";
 content.style.transform = "translate(0, -20px)";
-message.innerHTML = `Acheter <span> 3 </span> autres E-Book pour avoir <span>1</span> ticket bonus et économiser <span> 24.90 &euro; </span>.`;
+message.innerHTML = `Acheter <span> 3 </span> autres E-Book pour avoir <span>1</span> E-Book bonus et économiser <span> 24.90 &euro; </span>.`;
 //All about Price logic (bonus,price,total,text etc ....) :
 const showMessagePrice = (quantity, unitPrice) => {
   let bonus = 0;
@@ -100,22 +100,22 @@ const showMessagePrice = (quantity, unitPrice) => {
     bonus = 0;
     text = `Acheter <span>${
       4 - quantity
-    } </span> autres E-Book pour avoir <span>1</span> ticket bonus et économiser <span>${parseFloat(unitPrice).toFixed(
+    } </span> autres E-Book pour avoir <span>1</span> E-Book bonus et économiser <span>${parseFloat(unitPrice).toFixed(
       2
     )}&euro; </span>.`;
     oldP.innerHTML = "";
-    totalTickets.innerHTML = `${quantity} tickets.`;
+    totalTickets.innerHTML = `${quantity} E-Books.`;
   } else if (quantity < 8) {
     bonus = 1;
     oldPrice = (unitPrice * (quantity + bonus)).toFixed(2);
     finalPrice = (unitPrice * quantity).toFixed(2);
     text = `Acheter <span>${
       8 - quantity
-    } </span> autres E-Book pour avoir <span>3</span> tickets bonus et économiser <span>${(
+    } </span> autres E-Book pour avoir <span>3</span> E-Books bonus et économiser <span>${(
       3 * unitPrice
     ).toFixed(2)} &euro;</span>.`;
     oldP.innerHTML = `${oldPrice} &euro;`;
-    totalTickets.innerHTML = `${quantity} tickets <span>+ ${bonus} ticket offert.</span>`;
+    totalTickets.innerHTML = `${quantity} E-Books <span>+ ${bonus} E-Books offert.</span>`;
   } else {
     bonus = 3 * (Math.floor(quantity / 4) - 1);
     oldPrice = (unitPrice * (quantity + bonus)).toFixed(2);
@@ -124,12 +124,12 @@ const showMessagePrice = (quantity, unitPrice) => {
       (Math.floor(quantity / 4) + 1) * 4 - quantity
     }</span> autres E-book pour avoir <span>${
       bonus + 3
-    } </span> tickets bonus et économiser <span>${(
+    } </span> E-Books bonus et économiser <span>${(
       (bonus + 3) *
       unitPrice
     ).toFixed(2)} &euro; </span>.`;
     oldP.innerHTML = `${oldPrice} &euro;`;
-    totalTickets.innerHTML = `${quantity} tickets <span>+ ${bonus} tickets offerts.</span>`;
+    totalTickets.innerHTML = `${quantity} E-Books <span>+ ${bonus} E-Books offerts.</span>`;
   }
   priceInput.value = finalPrice + "€";
   message.innerHTML = text;
@@ -183,7 +183,7 @@ submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
     error = "Veuillez entrer votre code postal";
   } else if (form.quantity.value < 1) {
-    error = "Veuillez entrer un nombre de tickets supérieure à 0.";
+    error = "Veuillez entrer un nombre de E-Books supérieure à 0.";
     e.preventDefault();
   }
   if (error !== "") {

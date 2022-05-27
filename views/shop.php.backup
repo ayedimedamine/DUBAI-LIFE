@@ -2,6 +2,26 @@
   include 'includes/header.php';
   include 'includes/navbar.php'; 
 ?>
+<!-- Hero -->
+<div class="relative z-0 bg-white">
+  <div class="relative mx-auto lg:mx-16">
+      <img src='../assets/images/v1.0.0/shopHero.jpg' class="absolute inset-0 object-cover w-full h-full bg-black" alt='The dubai life' />
+      <div class="bg-black">
+      <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
+        <div class="relative max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12">
+          <!-- <img class='h-12 object-cover md:hidden mx-auto my-4' src='../assets/images/v1.0.0/logo_icon.png' alt='The dubai life' /> -->
+          <h2 class="max-w-lg mb-2 md:mt-0 text-5xl font-bold text-white sm:text-6xl mx-auto tracking-wider">
+            Jeu Concours
+          </h2>
+          <span class="border-t border-white md:pt-0 md:border-none text-white font-bold text-lg ">THE NEW LIFE BY DUBAI LIFE</span>
+          <p class="italic text-2xl md:text-3xl tracking-wide font-bold text-[#D19F46] my-4">
+            Gagnez un <span class="text-[#F3CC94]">appartement</span> sur <span class="text-[#F3CC94]">Dubaï</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
  <!-- Main -->      
 <div>
     <div class='grid grid-cols-12 gap-2 mt-8 items-start justify-center'>
@@ -25,11 +45,11 @@
                <div class="spin"></div>
             </div>
     </div>
-    <div class='px-8 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20 '>
+    <div class='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:py-20'>
     <form autocomplete="off" action="/checkout" method="POST" name="myForm">
-        <div class='grid w-full row-gap-8 sm:row-gap-10  sm:mx-auto dzovi'>
+        <div class='grid w-full gap-10 row-gap-8 sm:row-gap-10 lg:grid-cols-3  sm:mx-auto'>
             <!-- Customer Infos section -->
-            <div class='flex flex-col myformD'>
+            <div class='flex flex-col'>
                 <div class="space-y-3">
                     <input
                     placeholder="Prénom Nom"
@@ -352,14 +372,14 @@
                 </div>
             </div>
             <!-- Product Image section -->
-            <!-- <div class='flex flex-col justify-center rounded-3xl py-1 md:py-0'> -->
-                <!-- <img src='../assets/images/v1.0.0/ebook.png' class="mx-auto"alt="E-BOOK" />
-                <p class="tracking-wider text-2xl text-center">1 <span class="font-bold">E-BOOK</span> <span class="font-bold text-[#D19F46]">=</span> 1 <span class="font-bold">TICKET</span></p> -->
-            <!-- </div> -->
+            <div class='flex flex-col justify-center rounded-3xl border-2 border-[#D19F46] py-4 md:py-0'>
+                <img src='../assets/images/v1.0.0/ebook.png' class="mx-auto"alt="E-BOOK" />
+                <p class="tracking-wider text-2xl text-center">1 <span class="font-bold">E-BOOK</span> <span class="font-bold text-[#D19F46]">=</span> 1 <span class="font-bold">TICKET</span></p>
+            </div>
             <!-- Order section -->
-            <div class='flex flex-col orderclass'>
-                <div class='relative w-full flex items-center justify-center  rounded-3xl border-2 border-[#D19F46] py-6'>
-                    <img src='../assets/images/v1.0.0/ebook.png' class="w-auto h-56"alt="TICKET" />
+            <div class='flex flex-col'>
+                <div class='relative w-full flex items-center justify-center  rounded-3xl border-2 border-[#D19F46]'>
+                    <img src='../assets/images/v1.0.0/ticketGif.gif' class="w-auto h-56"alt="TICKET" />
                 </div>
                 <!-- Order Quantity controls -->
                 <div class="relative z-10 flex bg-[#D19F46] mx-auto w-1/2 items-center justify-around h-12 -mt-6 rounded-full">
@@ -402,8 +422,8 @@
                 <div class="mt-6  grid-cols-8 h-12 items-center justify-start hidden">
                     <div class="col-span-1 border border-black w-8 h-8 p-2 rounded-full flex items-center justify-center"><i class="fa fa-info"></i></div>
                     <p class="col-span-7">
-                    Achetez <span id="showPresent" class="font-bold">3</span> autres E-Books </br>
-                    pour avoir <span id="listTick" class="font-bold">1</span> E-Book bonus </br>
+                    Achetez <span id="showPresent" class="font-bold">3</span> autres tickets </br>
+                    pour avoir <span id="listTick" class="font-bold">1</span> ticket bonus </br>
                     et économisez <input class="font-bold bg-transparent w-24 text-center p-0 border-none" type="text" value="24.90" disabled id="priceT" /> <span class="font-bold">€</span>.
                     <p>
                 </div>
